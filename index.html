@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site IA — Actualités Intelligence Artificielle</title>
+  <meta name="description" content="Découvrez les dernières actualités sur l'Intelligence Artificielle, compilées automatiquement depuis les meilleures sources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-icon">🤖</span>
+        <span class="logo-text">Site<span class="logo-accent">IA</span></span>
+      </a>
+      <nav class="nav">
+        <a href="#news" class="nav-link active">Actualités</a>
+        <a href="#about" class="nav-link">À propos</a>
+      </nav>
+      <div class="header-actions">
+        <span class="last-update" id="lastUpdate"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-line">L'actualité</span>
+        <span class="hero-line hero-gradient">Intelligence Artificielle</span>
+      </h1>
+      <p class="hero-subtitle">Les dernières nouvelles de l'IA compilées automatiquement depuis les meilleures sources mondiales.</p>
+      <div class="hero-stats" id="heroStats">
+        <div class="stat">
+          <span class="stat-number" id="totalArticles">0</span>
+          <span class="stat-label">Articles</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Sources</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24h</span>
+          <span class="stat-label">Refresh</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main" id="news">
+    <div class="controls">
+      <div class="search-box">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un article...">
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-source="all">Toutes</button>
+      </div>
+    </div>
+
+    <div class="articles-grid" id="articlesGrid"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <footer class="footer" id="about">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🤖</span>
+        <span class="logo-text">Site<span class="logo-accent">IA</span></span>
+        <p class="footer-desc">Site d'actualités IA auto-alimenté par des flux RSS.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Sources</h4>
+        <ul>
+          <li>NVIDIA Blog</li>
+          <li>TechCrunch AI</li>
+          <li>The Verge AI</li>
+          <li>Reuters Tech</li>
+          <li>OpenAI Blog</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Technologies</h4>
+        <ul>
+          <li>GitHub Actions</li>
+          <li>GitHub Pages</li>
+          <li>Node.js</li>
+          <li>Vanilla JS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Site IA — Mis à jour automatiquement chaque jour.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
