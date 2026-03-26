@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backtest Comparatif A vs B - 2026-03-05</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0e17;color:#e0e0e0;font-family:'Segoe UI',Arial,sans-serif;min-height:100vh}
+.header{background:linear-gradient(135deg,#0d1b2a 0%,#0a1628 50%,#091422 100%);border-bottom:2px solid #00e676;padding:32px 40px;text-align:center}
+.header h1{font-size:28px;font-weight:700;color:#ffffff;letter-spacing:2px;text-transform:uppercase}
+.header .subtitle{color:#00e676;font-size:13px;letter-spacing:3px;margin-top:6px}
+.header .meta{color:#546e7a;font-size:12px;margin-top:8px}
+.container{max-width:1300px;margin:0 auto;padding:30px 20px}
+.section-title{font-size:16px;font-weight:700;color:#00e676;text-transform:uppercase;letter-spacing:2px;margin:30px 0 16px;border-left:3px solid #00e676;padding-left:12px}
+.cards-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:30px}
+.card{background:#0d1b2a;border:1px solid #1e2a3a;border-radius:8px;padding:14px;text-align:center}
+.card-sym{font-size:14px;font-weight:700;color:#00e676;margin-bottom:8px}
+.card-metric{font-size:11px;color:#546e7a;margin-bottom:2px}
+.card-val{font-size:13px;font-weight:600;margin-bottom:6px}
+.strat-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:3px;display:inline-block;margin:1px}
+.badge-a{background:#1a3a5c;color:#64b5f6}
+.badge-b{background:#1a3a2a;color:#00e676}
+table{width:100%;border-collapse:collapse;background:#0d1b2a;border-radius:8px;overflow:hidden;margin-bottom:20px}
+thead tr{background:#0a1628;border-bottom:2px solid #1e2a3a}
+th{padding:11px 14px;text-align:left;font-size:11px;font-weight:700;color:#546e7a;text-transform:uppercase;letter-spacing:1px}
+.comparison-table th.h-a{color:#64b5f6}
+.comparison-table th.h-b{color:#00e676}
+.vs-badge{background:#ff6d00;color:#fff;font-size:9px;padding:1px 5px;border-radius:3px;font-weight:700;margin-left:4px}
+td{padding:10px 14px;font-size:13px;border-bottom:1px solid #111d2b}
+tr:last-child td{border-bottom:none}
+tr:hover{background:#0f1f30}
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:30px}
+.chart-box{background:#0d1b2a;border:1px solid #1e2a3a;border-radius:8px;padding:20px}
+.chart-title{font-size:12px;color:#90a4ae;text-align:center;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
+canvas{display:block;width:100%!important;height:220px!important}
+.sym-section{background:#0d1b2a;border:1px solid #1e2a3a;border-radius:8px;padding:20px;margin-bottom:20px}
+.sym-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;border-bottom:1px solid #1e2a3a;padding-bottom:12px}
+.sym-name{font-size:18px;font-weight:700;color:#fff}
+.sym-tag{background:#0a1628;border:1px solid #1e2a3a;border-radius:4px;padding:3px 10px;font-size:11px;color:#546e7a}
+.mini-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.mini-card{background:#0a1628;border-radius:6px;padding:12px;border:1px solid #1e2a3a}
+.mini-card h4{font-size:11px;font-weight:700;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+.mini-card.strat-a h4{color:#64b5f6}
+.mini-card.strat-b h4{color:#00e676}
+.kpi-row{display:flex;justify-content:space-between;margin-bottom:4px}
+.kpi-label{font-size:11px;color:#546e7a}
+.kpi-val{font-size:11px;font-weight:600}
+.trades-toggle{background:#0a1628;color:#90a4ae;border:1px solid #1e2a3a;padding:6px 14px;border-radius:4px;font-size:11px;cursor:pointer;margin-bottom:8px}
+.methodo{background:#0d1b2a;border:1px solid #1e2a3a;border-radius:8px;padding:24px;margin-bottom:30px}
+.methodo p{font-size:13px;color:#90a4ae;line-height:1.7;margin-bottom:10px}
+.methodo ul{margin-left:20px;margin-bottom:10px}
+.methodo li{font-size:13px;color:#90a4ae;line-height:1.8}
+.methodo strong{color:#00e676}
+.footer{text-align:center;color:#263238;font-size:11px;padding:20px;border-top:1px solid #0d1b2a}
+.winner{background:#0a2a15;border:1px solid #00e676;border-radius:6px;padding:8px 14px;display:inline-block;font-size:12px;color:#00e676;margin-left:8px}
+.loser{background:#1a0a0a;border:1px solid #ff5252;border-radius:6px;padding:8px 14px;display:inline-block;font-size:12px;color:#ff5252;margin-left:8px}
+.heatmap{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:30px}
+.hm-cell{padding:12px 8px;border-radius:6px;text-align:center;font-size:12px;font-weight:700;border:1px solid transparent}
+.hm-label{font-size:10px;color:#546e7a;margin-bottom:4px}
+.hm-val{font-size:14px}
+.info-bar{background:#091422;border:1px solid #1e2a3a;border-radius:6px;padding:10px 16px;margin-bottom:20px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.info-item{font-size:12px;color:#546e7a}
+.info-item span{color:#90a4ae;font-weight:600}
+.halt-note{background:#1a1a0a;border:1px solid #ffc107;border-radius:6px;padding:10px 16px;margin-bottom:20px;font-size:12px;color:#ffc107}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="subtitle">ANALYSE QUANTITATIVE</div>
+  <h1>Backtest Comparatif Strategies A vs B</h1>
+  <div class="subtitle">MA20/MA50 Crossover - AAPL / MSFT / TSLA / NVDA / AMZN</div>
+  <div class="meta">Periode : 2 ans de donnees journalieres &nbsp;|&nbsp; Date d'execution : 2026-03-05 &nbsp;|&nbsp; Source : Yahoo Finance</div>
+</div>
+
+<div class="container">
+
+  <div class="info-bar">
+    <div class="info-item">Capital initial (A): <span>$10 000 / action</span></div>
+    <div class="info-item">Capital initial (B): <span>$500 portefeuille / $100 max/position</span></div>
+    <div class="info-item">Periode: <span>2 ans</span></div>
+    <div class="info-item">Intervalle: <span>Journalier</span></div>
+    <div class="info-item">Univers: <span>5 titres US large cap</span></div>
+  </div>
+
+  <div class="section-title">Parametres des Strategies</div>
+  <table class="comparison-table">
+    <thead><tr>
+      <th>Parametre</th>
+      <th class="h-a">Strategie A - Simple</th>
+      <th class="h-b">Strategie B - Filtree <span class="vs-badge">NOUVEAU</span></th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="color:#90a4ae">Signal d'entree</td><td style="color:#64b5f6">MA20 croise au-dessus MA50</td><td style="color:#00e676">MA20 croise au-dessus MA50</td></tr>
+      <tr><td style="color:#90a4ae">Filtre RSI</td><td style="color:#546e7a">Aucun</td><td style="color:#00e676">RSI(14) entre 30 et 70</td></tr>
+      <tr><td style="color:#90a4ae">Filtre Volume</td><td style="color:#546e7a">Aucun</td><td style="color:#00e676">Volume > moyenne 20 jours</td></tr>
+      <tr><td style="color:#90a4ae">Persistance signal</td><td style="color:#546e7a">1 jour (immediat)</td><td style="color:#00e676">2 jours consecutifs</td></tr>
+      <tr><td style="color:#90a4ae">Stop-Loss</td><td style="color:#64b5f6">Fixe -2%</td><td style="color:#00e676">ATR(14) x 1.5 dynamique (trailing)</td></tr>
+      <tr><td style="color:#90a4ae">Take-Profit</td><td style="color:#64b5f6">Fixe +4%</td><td style="color:#546e7a">Aucun (sortie MA cross ou SL)</td></tr>
+      <tr><td style="color:#90a4ae">Max positions</td><td style="color:#546e7a">1 / titre</td><td style="color:#00e676">3 simultanees (portefeuille)</td></tr>
+      <tr><td style="color:#90a4ae">Circuit breaker</td><td style="color:#546e7a">Aucun</td><td style="color:#00e676">Halt si drawdown portefeuille > -10%</td></tr>
+      <tr><td style="color:#90a4ae">Capital</td><td style="color:#64b5f6">$10 000 / titre</td><td style="color:#00e676">$500 total / $100 max par position</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">Synthese Comparative par Titre</div>
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-sym">AAPL</div>
+      <div class="card-metric">Rendement total</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-a">A</span> -9.47%</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-b">B</span> -4.85%</div>
+      <div style="font-size:10px;color:#546e7a;margin-top:6px">Gagnant rendement: <span style="color:#00e676;font-weight:700">Strat. B</span></div>
+    </div>
+    <div class="card">
+      <div class="card-sym">MSFT</div>
+      <div class="card-metric">Rendement total</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-a">A</span> -0.49%</div>
+      <div class="card-val" style="color:#00e676"><span class="strat-badge badge-b">B</span> 8.39%</div>
+      <div style="font-size:10px;color:#546e7a;margin-top:6px">Gagnant rendement: <span style="color:#00e676;font-weight:700">Strat. B</span></div>
+    </div>
+    <div class="card">
+      <div class="card-sym">TSLA</div>
+      <div class="card-metric">Rendement total</div>
+      <div class="card-val" style="color:#00e676"><span class="strat-badge badge-a">A</span> 15.09%</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-b">B</span> -10.00%</div>
+      <div style="font-size:10px;color:#546e7a;margin-top:6px">Gagnant rendement: <span style="color:#64b5f6;font-weight:700">Strat. A</span></div>
+    </div>
+    <div class="card">
+      <div class="card-sym">NVDA</div>
+      <div class="card-metric">Rendement total</div>
+      <div class="card-val" style="color:#00e676"><span class="strat-badge badge-a">A</span> 9.52%</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-b">B</span> -4.38%</div>
+      <div style="font-size:10px;color:#546e7a;margin-top:6px">Gagnant rendement: <span style="color:#64b5f6;font-weight:700">Strat. A</span></div>
+    </div>
+    <div class="card">
+      <div class="card-sym">AMZN</div>
+      <div class="card-metric">Rendement total</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-a">A</span> -4.76%</div>
+      <div class="card-val" style="color:#ff5252"><span class="strat-badge badge-b">B</span> -1.08%</div>
+      <div style="font-size:10px;color:#546e7a;margin-top:6px">Gagnant rendement: <span style="color:#00e676;font-weight:700">Strat. B</span></div>
+    </div>
+  </div>
+
+  <div class="section-title">Tableau Comparatif Complet</div>
+  <table class="comparison-table">
+    <thead><tr>
+      <th>Titre</th>
+      <th class="h-a">Ret. A</th><th class="h-b">Ret. B</th>
+      <th class="h-a">Sharpe A</th><th class="h-b">Sharpe B</th>
+      <th class="h-a">MaxDD A</th><th class="h-b">MaxDD B</th>
+      <th class="h-a">Win% A</th><th class="h-b">Win% B</th>
+      <th class="h-a">Trades A</th><th class="h-b">Trades B</th>
+      <th class="h-a">Best A</th><th class="h-b">Best B</th>
+      <th class="h-a">Worst A</th><th class="h-b">Worst B</th>
+    </tr></thead>
+    <tbody>
+<tr>
+    <td style="font-weight:700;color:#fff">AAPL</td>
+    <td style="color:#ff5252;font-weight:600">-9.47%</td>
+    <td style="color:#ff5252;font-weight:600">-4.85%</td>
+    <td style="color:#ff5252">-0.99</td>
+    <td style="color:#00e676">0.00</td>
+    <td style="color:#ff5252">-11.29%</td>
+    <td style="color:#ff5252">-4.85%</td>
+    <td>16.70%</td>
+    <td>0.00%</td>
+    <td style="color:#90a4ae">6</td>
+    <td style="color:#90a4ae">1</td>
+    <td style="color:#00e676">4.46%</td>
+    <td style="color:#00e676">-4.85%</td>
+    <td style="color:#ff5252">-4.16%</td>
+    <td style="color:#ff5252">-4.85%</td>
+  </tr><tr>
+    <td style="font-weight:700;color:#fff">MSFT</td>
+    <td style="color:#ff5252;font-weight:600">-0.49%</td>
+    <td style="color:#00e676;font-weight:600">8.39%</td>
+    <td style="color:#ff5252">-0.02</td>
+    <td style="color:#00e676">1.00</td>
+    <td style="color:#ff5252">-6.09%</td>
+    <td style="color:#ff5252">-0.01%</td>
+    <td>40.00%</td>
+    <td>50.00%</td>
+    <td style="color:#90a4ae">5</td>
+    <td style="color:#90a4ae">2</td>
+    <td style="color:#00e676">4.53%</td>
+    <td style="color:#00e676">8.40%</td>
+    <td style="color:#ff5252">-3.38%</td>
+    <td style="color:#ff5252">-0.01%</td>
+  </tr><tr>
+    <td style="font-weight:700;color:#fff">TSLA</td>
+    <td style="color:#00e676;font-weight:600">15.09%</td>
+    <td style="color:#ff5252;font-weight:600">-10.00%</td>
+    <td style="color:#00e676">1.32</td>
+    <td style="color:#ff5252">-23.11</td>
+    <td style="color:#ff5252">-2.50%</td>
+    <td style="color:#ff5252">-10.00%</td>
+    <td>75.00%</td>
+    <td>0.00%</td>
+    <td style="color:#90a4ae">4</td>
+    <td style="color:#90a4ae">2</td>
+    <td style="color:#00e676">8.32%</td>
+    <td style="color:#00e676">-4.91%</td>
+    <td style="color:#ff5252">-2.50%</td>
+    <td style="color:#ff5252">-5.35%</td>
+  </tr><tr>
+    <td style="font-weight:700;color:#fff">NVDA</td>
+    <td style="color:#00e676;font-weight:600">9.52%</td>
+    <td style="color:#ff5252;font-weight:600">-4.38%</td>
+    <td style="color:#00e676">0.55</td>
+    <td style="color:#00e676">0.00</td>
+    <td style="color:#ff5252">-9.49%</td>
+    <td style="color:#ff5252">-4.38%</td>
+    <td>50.00%</td>
+    <td>0.00%</td>
+    <td style="color:#90a4ae">6</td>
+    <td style="color:#90a4ae">1</td>
+    <td style="color:#00e676">9.52%</td>
+    <td style="color:#00e676">-4.38%</td>
+    <td style="color:#ff5252">-4.80%</td>
+    <td style="color:#ff5252">-4.38%</td>
+  </tr><tr>
+    <td style="font-weight:700;color:#fff">AMZN</td>
+    <td style="color:#ff5252;font-weight:600">-4.76%</td>
+    <td style="color:#ff5252;font-weight:600">-1.08%</td>
+    <td style="color:#ff5252">-0.53</td>
+    <td style="color:#ff5252">-0.15</td>
+    <td style="color:#ff5252">-8.99%</td>
+    <td style="color:#ff5252">-4.75%</td>
+    <td>20.00%</td>
+    <td>33.30%</td>
+    <td style="color:#90a4ae">5</td>
+    <td style="color:#90a4ae">3</td>
+    <td style="color:#00e676">4.64%</td>
+    <td style="color:#00e676">3.85%</td>
+    <td style="color:#ff5252">-2.50%</td>
+    <td style="color:#ff5252">-2.75%</td>
+  </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">Graphiques Comparatifs</div>
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="chart-title">Rendement Total (%)</div>
+      <canvas id="chartRet"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">Ratio de Sharpe</div>
+      <canvas id="chartSharpe"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">Drawdown Maximum (%)</div>
+      <canvas id="chartDD"></canvas>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">Taux de Gain (%)</div>
+      <canvas id="chartWR"></canvas>
+    </div>
+  </div>
+
+  <div class="section-title">Heatmap des Rendements - Strategie A</div>
+  <div class="heatmap">
+<div class="hm-cell" style="background:rgba(255,82,82,0.26940000000000003);border-color:#ff5252">
+    <div class="hm-label">AAPL</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -9.47%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">6 trades</div>
+  </div><div class="hm-cell" style="background:rgba(255,82,82,0.0898);border-color:#ff5252">
+    <div class="hm-label">MSFT</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -0.49%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">5 trades</div>
+  </div><div class="hm-cell" style="background:rgba(0,230,118,0.38180000000000003);border-color:#00e676">
+    <div class="hm-label">TSLA</div>
+    <div class="hm-val" style="color:#00e676">&#9650; 15.09%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">4 trades</div>
+  </div><div class="hm-cell" style="background:rgba(0,230,118,0.27040000000000003);border-color:#00e676">
+    <div class="hm-label">NVDA</div>
+    <div class="hm-val" style="color:#00e676">&#9650; 9.52%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">6 trades</div>
+  </div><div class="hm-cell" style="background:rgba(255,82,82,0.17520000000000002);border-color:#ff5252">
+    <div class="hm-label">AMZN</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -4.76%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">5 trades</div>
+  </div>
+  </div>
+
+  <div class="section-title">Heatmap des Rendements - Strategie B</div>
+  <div class="heatmap">
+<div class="hm-cell" style="background:rgba(255,82,82,0.177);border-color:#ff5252">
+    <div class="hm-label">AAPL</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -4.85%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">1 trades</div>
+  </div><div class="hm-cell" style="background:rgba(0,230,118,0.24780000000000002);border-color:#00e676">
+    <div class="hm-label">MSFT</div>
+    <div class="hm-val" style="color:#00e676">&#9650; 8.39%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">2 trades</div>
+  </div><div class="hm-cell" style="background:rgba(255,82,82,0.28);border-color:#ff5252">
+    <div class="hm-label">TSLA</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -10.00%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">2 trades</div>
+  </div><div class="hm-cell" style="background:rgba(255,82,82,0.16760000000000003);border-color:#ff5252">
+    <div class="hm-label">NVDA</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -4.38%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">1 trades</div>
+  </div><div class="hm-cell" style="background:rgba(255,82,82,0.10160000000000001);border-color:#ff5252">
+    <div class="hm-label">AMZN</div>
+    <div class="hm-val" style="color:#ff5252">&#9660; -1.08%</div>
+    <div style="font-size:10px;color:#546e7a;margin-top:3px">3 trades</div>
+  </div>
+  </div>
+
+  <div class="section-title">Detail par Titre</div>
+
+  <div class="sym-section">
+    <div class="sym-header">
+      <span class="sym-name">AAPL</span>
+      <span class="sym-tag">6 trades (A)</span>
+      <span class="sym-tag">1 trades (B)</span>
+      <span class="winner">&#9650; Strat. B superieure</span>
+    </div>
+    <div class="mini-compare">
+      <div class="mini-card strat-a">
+        <h4>Strategie A - Simple</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-9.47%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#ff5252">-0.99</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-11.29%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">16.70%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">6</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">4.46%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-4.16%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$9053</span></div>
+      </div>
+      <div class="mini-card strat-b">
+        <h4>Strategie B - Filtree</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-4.85%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#00e676">0.00</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-4.85%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">0.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">1</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">-4.85%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-4.85%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$95</span></div>
+      </div>
+    </div>
+    <details>
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie A (6)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-08-27</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-03</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$226.54</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$221.32</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.31%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">7j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-12-03</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-12-17</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$241.33</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$252.10</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 4.46%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">14j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-03-06</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-03-10</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$234.31</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$226.49</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -3.34%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">4j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-06-05</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-06-13</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$200.02</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$195.85</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.08%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">8j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-07-11</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-08-01</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$210.52</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$201.77</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -4.16%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">21j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-02-23</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-03-05</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$266.18</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$260.29</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.21%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">10j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr></tbody></table>
+    </details>
+    <details style="margin-top:8px">
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie B (1)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-03-07</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-03-10</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$238.03</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$226.49</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -4.85%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">3j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr></tbody></table>
+    </details>
+  </div>
+  <div class="sym-section">
+    <div class="sym-header">
+      <span class="sym-name">MSFT</span>
+      <span class="sym-tag">5 trades (A)</span>
+      <span class="sym-tag">2 trades (B)</span>
+      <span class="winner">&#9650; Strat. B superieure</span>
+    </div>
+    <div class="mini-compare">
+      <div class="mini-card strat-a">
+        <h4>Strategie A - Simple</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-0.49%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#ff5252">-0.02</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-6.09%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">40.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">5</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">4.53%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-3.38%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$9951</span></div>
+      </div>
+      <div class="mini-card strat-b">
+        <h4>Strategie B - Filtree</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#00e676">8.39%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#00e676">1.00</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-0.01%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">50.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">2</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">8.40%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-0.01%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$108</span></div>
+      </div>
+    </div>
+    <details>
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie A (5)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-05-29</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-05-30</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$423.44</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$409.14</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -3.38%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">1j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-24</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-10-02</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$424.21</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$412.31</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.81%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">8j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-12-03</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-12-11</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$427.07</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$444.69</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 4.13%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">8j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-06</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-14</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$430.02</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$449.50</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 4.53%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">8j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-10-08</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-10-10</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$522.68</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$508.84</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.65%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">2j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr></tbody></table>
+    </details>
+    <details style="margin-top:8px">
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie B (2)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-05-30</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-07-16</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$409.14</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$443.52</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 8.40%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">47j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-12-04</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-12-18</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$433.23</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$433.20</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -0.01%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">14j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr></tbody></table>
+    </details>
+  </div>
+  <div class="sym-section">
+    <div class="sym-header">
+      <span class="sym-name">TSLA</span>
+      <span class="sym-tag">4 trades (A)</span>
+      <span class="sym-tag">2 trades (B)</span>
+      <span class="winner">&#9650; Strat. A superieure</span>
+    </div>
+    <div class="mini-compare">
+      <div class="mini-card strat-a">
+        <h4>Strategie A - Simple</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#00e676">15.09%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#00e676">1.32</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-2.50%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">75.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">4</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">8.32%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-2.50%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$11509</span></div>
+      </div>
+      <div class="mini-card strat-b">
+        <h4>Strategie B - Filtree</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-10.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#ff5252">-23.11</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-10.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">0.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">2</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">-4.91%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-5.35%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$90</span></div>
+      </div>
+    </div>
+    <details>
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie A (4)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-23</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-27</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$250.00</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$260.46</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 4.18%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">4j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-06</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-09</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$275.35</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$298.26</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 8.32%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">3j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-08-11</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-08-15</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$339.03</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$330.56</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.50%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">4j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-12-17</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-12-22</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$467.26</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$488.73</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 4.59%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">5j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr></tbody></table>
+    </details>
+    <details style="margin-top:8px">
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie B (2)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-24</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-10-03</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$254.27</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$240.66</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -5.35%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">9j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-12-18</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-12-29</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$483.37</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$459.64</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -4.91%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">11j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr></tbody></table>
+    </details>
+  </div>
+  <div class="sym-section">
+    <div class="sym-header">
+      <span class="sym-name">NVDA</span>
+      <span class="sym-tag">6 trades (A)</span>
+      <span class="sym-tag">1 trades (B)</span>
+      <span class="winner">&#9650; Strat. A superieure</span>
+    </div>
+    <div class="mini-compare">
+      <div class="mini-card strat-a">
+        <h4>Strategie A - Simple</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#00e676">9.52%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#00e676">0.55</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-9.49%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">50.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">6</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">9.52%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-4.80%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$10952</span></div>
+      </div>
+      <div class="mini-card strat-b">
+        <h4>Strategie B - Filtree</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-4.38%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#00e676">0.00</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-4.38%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">0.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">1</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">-4.38%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-4.38%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$96</span></div>
+      </div>
+    </div>
+    <details>
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie A (6)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-05-20</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-05-23</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$94.73</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$103.75</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 9.52%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">3j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-06</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-10</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$102.79</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$108.05</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 5.13%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">4j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-10-02</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-10-04</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$118.81</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$124.88</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 5.11%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">2j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-14</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-21</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$135.32</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$131.78</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.62%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">7j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-10-03</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-10-10</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$187.61</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$183.15</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.38%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">7j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-15</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-20</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$187.05</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$178.07</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -4.80%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">5j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr></tbody></table>
+    </details>
+    <details style="margin-top:8px">
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie B (1)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-16</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-20</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$186.23</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$178.07</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -4.38%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">4j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr></tbody></table>
+    </details>
+  </div>
+  <div class="sym-section">
+    <div class="sym-header">
+      <span class="sym-name">AMZN</span>
+      <span class="sym-tag">5 trades (A)</span>
+      <span class="sym-tag">3 trades (B)</span>
+      <span class="winner">&#9650; Strat. B superieure</span>
+    </div>
+    <div class="mini-compare">
+      <div class="mini-card strat-a">
+        <h4>Strategie A - Simple</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-4.76%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#ff5252">-0.53</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-8.99%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">20.00%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">5</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">4.64%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-2.50%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$9524</span></div>
+      </div>
+      <div class="mini-card strat-b">
+        <h4>Strategie B - Filtree</h4>
+        <div class="kpi-row"><span class="kpi-label">Rendement</span><span class="kpi-val" style="color:#ff5252">-1.08%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Sharpe</span><span class="kpi-val" style="color:#ff5252">-0.15</span></div>
+        <div class="kpi-row"><span class="kpi-label">Max Drawdown</span><span class="kpi-val" style="color:#ff5252">-4.75%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Taux de gain</span><span class="kpi-val">33.30%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Nb trades</span><span class="kpi-val" style="color:#90a4ae">3</span></div>
+        <div class="kpi-row"><span class="kpi-label">Meilleur trade</span><span class="kpi-val" style="color:#00e676">3.85%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Pire trade</span><span class="kpi-val" style="color:#ff5252">-2.75%</span></div>
+        <div class="kpi-row"><span class="kpi-label">Capital final</span><span class="kpi-val" style="color:#fff">$99</span></div>
+      </div>
+    </div>
+    <details>
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie A (5)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-06-21</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-06-27</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$189.08</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$197.85</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 4.64%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">6j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#00e676">Take Profit</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-19</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-10-01</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$189.87</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$185.13</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.50%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">12j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-16</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-05-21</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$205.59</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$201.12</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.17%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">5j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-11-06</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2025-11-13</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$243.04</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$237.58</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.25%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">7j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-14</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-20</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$236.65</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$231.00</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.39%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">6j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">Stop Loss</td>
+    </tr></tbody></table>
+    </details>
+    <details style="margin-top:8px">
+      <summary style="cursor:pointer;color:#546e7a;font-size:12px;padding:8px 0;user-select:none;">
+        Voir les transactions Strategie B (3)
+      </summary>
+      <table style="margin-top:8px"><thead><tr>
+        <th>Entree</th><th>Sortie</th><th>Prix E.</th><th>Prix S.</th><th>P&amp;L%</th><th>Duree</th><th>Raison</th>
+      </tr></thead><tbody>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-06-24</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-07-15</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$185.57</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$192.72</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#00e676">&#9650; 3.85%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">21j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-20</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2024-09-30</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$191.60</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$186.33</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.75%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">10j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr>
+    <tr style="border-bottom:1px solid #1e2a3a;">
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-01-15</td>
+      <td style="padding:8px 12px;color:#90a4ae;font-size:12px;">2026-02-04</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$238.18</td>
+      <td style="padding:8px 12px;color:#b0bec5;font-size:12px;">$232.99</td>
+      <td style="padding:8px 12px;font-size:12px;font-weight:bold;color:#ff5252">&#9660; -2.18%</td>
+      <td style="padding:8px 12px;color:#78909c;font-size:12px;">20j</td>
+      <td style="padding:8px 12px;font-size:12px;color:#ff5252">ATR Stop</td>
+    </tr></tbody></table>
+    </details>
+  </div>
+
+  <div class="section-title">Methodologie</div>
+  <div class="methodo">
+    <p><strong>Source des donnees :</strong> Yahoo Finance API v8 Chart - donnees ajustees en cloture (2 ans, journalier).</p>
+    <p><strong>Strategie A - Simple :</strong></p>
+    <ul>
+      <li>Signal d'achat : MA20 croise au-dessus de MA50 (croisement doree)</li>
+      <li>Signal de vente : MA20 croise en-dessous de MA50, OU stop-loss fixe -2%, OU take-profit fixe +4%</li>
+      <li>Capital : $10 000 par titre, investi integralement a chaque signal</li>
+      <li>Horizon : 2 ans de donnees, 5 titres (AAPL, MSFT, TSLA, NVDA, AMZN)</li>
+    </ul>
+    <p><strong>Strategie B - Filtree :</strong></p>
+    <ul>
+      <li>Memes signaux MA20/MA50 + filtres additionnels : RSI(14) entre 30-70, volume superieur a la moyenne 20 jours</li>
+      <li>Persistance 2 jours : le croisement doit etre confirme 2 jours consecutifs avant entree</li>
+      <li>Stop-loss dynamique trailing : ATR(14) x 1.5 (remonte automatiquement avec le prix)</li>
+      <li>Portefeuille : $500 total, maximum $100 par position, maximum 3 positions simultanees</li>
+      <li>Circuit breaker : toute activite suspendue si le drawdown du portefeuille depasse -10%</li>
+    </ul>
+    <p><strong>Metriques calculees :</strong></p>
+    <ul>
+      <li>Rendement total : (Capital final - Capital initial) / Capital initial x 100</li>
+      <li>Ratio de Sharpe annualise : (Moyenne des rendements par trade / Ecart-type) x sqrt(trades/an), taux sans risque = 0</li>
+      <li>Drawdown maximum : pire baisse depuis un pic d'equite</li>
+      <li>Taux de gain : % de trades clotures en profit</li>
+    </ul>
+    <p><strong>Avertissement :</strong> Ce backtest est fourni a titre informatif uniquement. Les performances passees ne garantissent pas les resultats futurs. Aucun frais de courtage ni impact de marche n'est inclus dans cette simulation.</p>
+  </div>
+
+  <div class="footer">
+    Genere automatiquement le 2026-03-05 &nbsp;|&nbsp; Twin Backtest Engine &nbsp;|&nbsp; Donnees : Yahoo Finance &nbsp;|&nbsp; github.com/webfree69/nabil
+  </div>
+</div>
+
+<script>
+const LABELS = ["AAPL","MSFT","TSLA","NVDA","AMZN"];
+const cfgBase = {
+  responsive:true, maintainAspectRatio:false,
+  plugins:{ legend:{labels:{color:'#90a4ae',font:{size:11}}}, tooltip:{backgroundColor:'#0d1b2a',borderColor:'#1e2a3a',borderWidth:1}},
+  scales:{
+    x:{ticks:{color:'#546e7a',font:{size:11}},grid:{color:'#111d2b'}},
+    y:{ticks:{color:'#546e7a',font:{size:11}},grid:{color:'#111d2b'}}
+  }
+};
+
+function makeBar(id, label, dataA, dataB, unit='%') {
+  new Chart(document.getElementById(id), {
+    type:'bar',
+    data:{
+      labels:LABELS,
+      datasets:[
+        {label:'Strat. A',data:dataA,backgroundColor:'rgba(100,181,246,0.7)',borderColor:'#64b5f6',borderWidth:1},
+        {label:'Strat. B',data:dataB,backgroundColor:'rgba(0,230,118,0.7)',borderColor:'#00e676',borderWidth:1}
+      ]
+    },
+    options:{...cfgBase,
+      plugins:{...cfgBase.plugins,
+        tooltip:{...cfgBase.plugins.tooltip,callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y.toFixed(2)+unit}}
+      },
+      scales:{
+        x:{...cfgBase.scales.x},
+        y:{...cfgBase.scales.y, ticks:{...cfgBase.scales.y.ticks, callback:v=>v.toFixed(1)+unit}}
+      }
+    }
+  });
+}
+
+makeBar('chartRet',  'Rendement',    [-9.47,-0.49,15.09,9.52,-4.76],    [-4.85,8.39,-10,-4.38,-1.08],    '%');
+makeBar('chartSharpe','Sharpe',       [-0.99,-0.02,1.32,0.55,-0.53], [0,1,-23.11,0,-0.15], '');
+makeBar('chartDD',   'Max Drawdown',  [-11.29,-6.09,-2.5,-9.49,-8.99],     [-4.85,-0.01,-10,-4.38,-4.75],     '%');
+makeBar('chartWR',   'Taux de Gain',  [16.7,40,75,50,20],     [0,50,0,0,33.3],     '%');
+</script>
+</body>
+</html>

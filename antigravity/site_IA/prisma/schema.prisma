@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Article {
+  id          String   @id @default(cuid())
+  title       String
+  seoTitle    String?
+  slug        String   @unique
+  summary     String
+  content     String?  
+  url         String   @unique
+  imageUrl    String?
+  source      String
+  category    String?
+  keywords    String?
+  publishedAt DateTime
+  createdAt   DateTime @default(now())
+}
