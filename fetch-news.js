@@ -22,61 +22,54 @@ const RSS_FEEDS = [
   {
     name: 'Numerama',
     url: 'https://www.numerama.com/feed/',
-    color: '#e5127d'
+    color: '#e5127d',
+    priority: 1
   },
   {
     name: 'Frandroid',
     url: 'https://www.frandroid.com/feed',
-    color: '#00b9ff'
+    color: '#00b9ff',
+    priority: 1
   },
   {
     name: 'Journal du Geek',
     url: 'https://www.journaldugeek.com/feed/',
-    color: '#ff6600'
+    color: '#ff6600',
+    priority: 1
   },
   {
     name: '01net',
     url: 'https://www.01net.com/rss/actualites/',
-    color: '#0033a0'
-  },
-  {
-    name: 'Le Monde Informatique',
-    url: 'https://www.lemondeinformatique.fr/flux-rss/thematique/toutes-les-actualites/rss.xml',
-    color: '#0055a4'
+    color: '#0033a0',
+    priority: 2
   },
   {
     name: 'Next Inpact',
     url: 'https://www.nextinpact.com/rss',
-    color: '#00a550'
-  },
-  {
-    name: 'L\'Usine Digitale',
-    url: 'https://www.usine-digitale.fr/arc/outboundfeeds/rss/',
-    color: '#000000'
-  },
-  {
-    name: 'Siècle Digital',
-    url: 'https://www.siecledigital.fr/feed/',
-    color: '#6366f1'
+    color: '#00a550',
+    priority: 1
   },
   {
     name: 'Clubic',
     url: 'https://www.clubic.com/feed/rss',
-    color: '#ff4500'
+    color: '#ff4500',
+    priority: 2
   },
   {
     name: 'Presse-Citron',
     url: 'https://presse-citron.net/feed/',
-    color: '#f7c948'
+    color: '#f7c948',
+    priority: 2
   }
 ];
 
 const MAX_ARTICLES_PER_SOURCE = 50;
 const FEED_PATH = path.join(__dirname, 'feed.json');
 
-async function fetchFeed(feedConfig) {
+async function fetchFeed(feedConfig, retryCount = 0) {
+  const timeoutMs = 4000; // 4 secondes timeout
   const timeoutPromise = new Promise((_, reject) => {
-    setTimeout(() => reject(new Error('Timeout après 6 secondes')), 6000);
+    setTimeout(() => reject(new Error('Timeout')), timeoutMs);
   });
 
   try {
@@ -95,6 +88,10 @@ async function fetchFeed(feedConfig) {
     console.log(`✅ ${feedConfig.name}: ${articles.length} articles`);
     return articles;
   } catch (error) {
+    if (retryCount < 1 && feedConfig.priority === 1) {
+      console.log(`🔄 Retry ${feedConfig.name}...`);
+      return fetchFeed(feedConfig, 1);
+    }
     console.error(`❌ Error ${feedConfig.name}: ${error.message}`);
     return [];
   }
@@ -137,11 +134,22 @@ async function main() {
   console.log('🚀 Démarrage de la récupération des actualités IA...\n');
   
   const allArticles = [];
+  const startTime = Date.now();
+  const maxTotalTime = 60000; // 60 secondes max pour tout le processus
   
-  for (const feedConfig of RSS_FEEDS) {
+  // Trier par priorité
+  const sortedFeeds = [...RSS_FEEDS].sort((a, b) => a.priority - b.priority);
+  
+  for (const feedConfig of sortedFeeds) {
+    // Vérifier le temps total
+    if (Date.now() - startTime > maxTotalTime) {
+      console.log('⏰ Timeout global atteint, sauvegarde des articles récupérés...');
+      break;
+    }
+    
     const articles = await fetchFeed(feedConfig);
     allArticles.push(...articles);
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise(resolve => setTimeout(resolve, 300)); // Réduit de 500 à 300ms
   }
   
   const uniqueArticles = deduplicate(allArticles);
@@ -150,13 +158,14 @@ async function main() {
   const feedData = {
     lastUpdated: new Date().toISOString(),
     totalArticles: sortedArticles.length,
-    articles: sortedArticles
+    articles: sortedArticles.slice(0, 200) // Limiter à 200 articles max
   };
   
   fs.writeFileSync(FEED_PATH, JSON.stringify(feedData, null, 2), 'utf8');
   
   console.log(`\n✅ Terminé ! ${sortedArticles.length} articles sauvegardés dans feed.json`);
   console.log(`📅 Dernière mise à jour: ${feedData.lastUpdated}`);
+  console.log(`⏱️ Temps total: ${((Date.now() - startTime) / 1000).toFixed(1)}s`);
 }
 
 main().catch(error => {
