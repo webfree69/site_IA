@@ -88,11 +88,11 @@ async function fetchFeed(feedConfig, retryCount = 0) {
     console.log(`✅ ${feedConfig.name}: ${articles.length} articles`);
     return articles;
   } catch (error) {
+    console.error(`❌ Error ${feedConfig.name}: ${error.message}`);
     if (retryCount < 1 && feedConfig.priority === 1) {
       console.log(`🔄 Retry ${feedConfig.name}...`);
       return fetchFeed(feedConfig, 1);
     }
-    console.error(`❌ Error ${feedConfig.name}: ${error.message}`);
     return [];
   }
 }

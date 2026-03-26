@@ -43,6 +43,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add feed.json
           git diff --staged --quiet || git commit -m "auto: update feed.json [skip ci]"
+          git pull --rebase origin main || true
           git push
 
       - name: Setup Pages
