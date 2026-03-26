@@ -8,7 +8,7 @@ Site web auto-alimenté sur l'actualité de l'Intelligence Artificielle, héberg
 
 ## ⚙️ Fonctionnalités
 
-- 📡 Collecte automatique de 5 sources RSS (NVIDIA, TechCrunch, The Verge, Reuters, OpenAI)
+- 📡 Collecte automatique de 10 sources RSS francophones (Numerama, Frandroid, Journal du Geek, 01net, Le Monde Informatique, Next Inpact, L'Usine Digitale, Siècle Digital, Clubic, BFMTV Tech)
 - 🔄 Mise à jour quotidienne à 06h00 UTC via GitHub Actions
 - 🎨 Design dark mode professionnel avec animations CSS
 - 🔍 Recherche en temps réel et filtres par source

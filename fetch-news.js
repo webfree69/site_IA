@@ -12,29 +12,54 @@ const parser = new Parser({
 
 const RSS_FEEDS = [
   {
-    name: 'NVIDIA Blog',
-    url: 'https://feeds.feedburner.com/nvidiablog',
-    color: '#76b900'
-  },
-  {
-    name: 'TechCrunch AI',
-    url: 'https://techcrunch.com/category/artificial-intelligence/feed/',
-    color: '#0a9e01'
-  },
-  {
-    name: 'The Verge AI',
-    url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',
+    name: 'Numerama',
+    url: 'https://www.numerama.com/feed/',
     color: '#e5127d'
   },
   {
-    name: 'Reuters Tech',
-    url: 'https://feeds.reuters.com/reuters/technologyNews',
-    color: '#ff8000'
+    name: 'Frandroid',
+    url: 'https://www.frandroid.com/feed',
+    color: '#00b9ff'
   },
   {
-    name: 'OpenAI Blog',
-    url: 'https://openai.com/blog/rss.xml',
-    color: '#10a37f'
+    name: 'Journal du Geek',
+    url: 'https://www.journaldugeek.com/feed/',
+    color: '#ff6600'
+  },
+  {
+    name: '01net',
+    url: 'https://www.01net.com/rss/actualites/',
+    color: '#0033a0'
+  },
+  {
+    name: 'Le Monde Informatique',
+    url: 'https://www.lemondeinformatique.fr/flux-xml/actualites-rss.html',
+    color: '#0055a4'
+  },
+  {
+    name: 'Next Inpact',
+    url: 'https://www.nextinpact.com/rss',
+    color: '#00a550'
+  },
+  {
+    name: 'L\'Usine Digitale',
+    url: 'https://www.usine-digitale.fr/rss/',
+    color: '#000000'
+  },
+  {
+    name: 'Siècle Digital',
+    url: 'https://www.siecledigital.fr/feed/',
+    color: '#6366f1'
+  },
+  {
+    name: 'Clubic',
+    url: 'https://www.clubic.com/feed',
+    color: '#ff4500'
+  },
+  {
+    name: 'BFMTV Tech',
+    url: 'https://www.bfmtv.com/rss/tech-telecom/',
+    color: '#e5001f'
   }
 ];
 
