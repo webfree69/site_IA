@@ -33,7 +33,7 @@ const RSS_FEEDS = [
   },
   {
     name: 'Le Monde Informatique',
-    url: 'https://www.lemondeinformatique.fr/flux-xml/actualites-rss.html',
+    url: 'https://www.lemondeinformatique.fr/flux-rss/thematique/toutes-les-actualites/rss.xml',
     color: '#0055a4'
   },
   {
@@ -43,7 +43,7 @@ const RSS_FEEDS = [
   },
   {
     name: 'L\'Usine Digitale',
-    url: 'https://www.usine-digitale.fr/rss/',
+    url: 'https://www.usine-digitale.fr/arc/outboundfeeds/rss/',
     color: '#000000'
   },
   {
@@ -53,13 +53,13 @@ const RSS_FEEDS = [
   },
   {
     name: 'Clubic',
-    url: 'https://www.clubic.com/feed',
+    url: 'https://www.clubic.com/feed/rss',
     color: '#ff4500'
   },
   {
-    name: 'BFMTV Tech',
-    url: 'https://www.bfmtv.com/rss/tech-telecom/',
-    color: '#e5001f'
+    name: 'Presse-Citron',
+    url: 'https://presse-citron.net/feed/',
+    color: '#f7c948'
   }
 ];
 

@@ -1,7 +1,259 @@
 {
-  "lastUpdated": "2026-03-26T07:39:09.993Z",
-  "totalArticles": 185,
+  "lastUpdated": "2026-03-26T09:08:49.053Z",
+  "totalArticles": 285,
   "articles": [
+    {
+      "title": "Le fleuron européen annule son premier vol orbital à la dernière seconde, que s'est-il passé ?",
+      "link": "https://www.clubic.com/actualite-606262-le-fleuron-europeen-annule-son-premier-vol-orbital-a-la-derniere-seconde-que-s-est-il-passe.html",
+      "pubDate": "Thu, 26 Mar 2026 09:08:00 GMT",
+      "contentSnippet": "Il ne manquait plus que trois secondes au compte à rebours pour qu'Isar Aerospace, fleuron européen du New Space, entre dans l'Histoire. Mais un incident a empêché l'entreprise d'opérer le premier vol orbital d'un lanceur privé depuis le Vieux Continent.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394961/raw"
+    },
+    {
+      "title": "« Si rien ne change, nous ne survivrons pas » : le cri d’alarme du patron de Toyota à ses fournisseurs",
+      "link": "https://www.frandroid.com/marques/toyota/3040583_si-rien-ne-change-nous-ne-survivrons-pas-le-cri-dalarme-du-patron-de-toyota-a-ses-fournisseurs",
+      "pubDate": "Thu, 26 Mar 2026 09:05:53 +0000",
+      "contentSnippet": "En pleine zone de turbulences, le patron de Toyota met en garde ses fournisseurs et les exhorte à accroître leur productivité. Un mal nécessaire pour faire face à la concurrence dans le domaine de la voiture électrique.",
+      "source": "Frandroid",
+      "sourceColor": "#00b9ff",
+      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/2026-toyota-chr-metal-oxide-dynamic-002.jpg?resize=1200,675&key=3ed6081d&watermark"
+    },
+    {
+      "title": "L'aide du gouvernement britannique � Jaguar Land Rover critiqu�e",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-l-aide-du-gouvernement-britannique-a-jaguar-land-rover-critiquee-99736.html",
+      "pubDate": "2026-03-26T09:02:44.000Z",
+      "contentSnippet": "Outre Manche, le Cyber Monitoring Center (CMC), organisme créé l'an dernier pour surveiller, définir et classifier les cyberincidents (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Nintendo change officiellement le prix de ses jeux : pour le meilleur ou pour le pire ?",
+      "link": "https://www.journaldugeek.com/2026/03/26/nintendo-change-officiellement-le-prix-de-ses-jeux-pour-le-meilleur-ou-pour-le-pire/",
+      "pubDate": "Thu, 26 Mar 2026 09:02:21 +0000",
+      "contentSnippet": "Le prix des jeux sur Switch 2 ne vont plus coûter le même prix qu'ils soient physiques ou dématérialisés. Bonne ou mauvaise nouvelle ?",
+      "source": "Journal du Geek",
+      "sourceColor": "#ff6600",
+      "image": "https://www.journaldugeek.com/app/uploads/2026/03/switch-2-jeux-prix-1280x853.jpg"
+    },
+    {
+      "title": "« Un véritable fantôme » : ce virus s’attaque à 850 extensions de navigateur « sans laisser de traces »",
+      "link": "https://www.01net.com/actualites/un-veritable-fantome-ce-virus-sattaque-a-850-extensions-de-navigateur-sans-laisser-de-traces.html",
+      "pubDate": "Thu, 26 Mar 2026 09:01:48 +0000",
+      "contentSnippet": "« Un véritable fantôme » s'attaque actuellement à votre navigateur. Capable de siphonner toutes vos données, le malware Torg Grabber vise 850 extensions, dont des gestionnaires de mots de passe, des outils d’authentification et des portefeuilles crypto.",
+      "source": "01net",
+      "sourceColor": "#0033a0",
+      "image": "https://www.01net.com/app/uploads/2026/03/malware-fantome-navigateurs-1344x896.jpg"
+    },
+    {
+      "title": "À l’approche de l’été, Samsung présente le futur de la climatisation : voici les nouveautés qui arrivent en 2026",
+      "link": "https://www.presse-citron.net/approche-ete-samsung-presente-futur-climatisation-voici-nouveautes-2026/",
+      "pubDate": "Thu, 26 Mar 2026 09:00:41 +0000",
+      "contentSnippet": "Avec le réchauffement climatique qui s'intensifie, la climatisation devient une nécessité croissante pour beaucoup, aussi bien chez les particuliers que dans les entreprises. Samsung l'a bien compris, et le géant coréen accélère fortement sur ce marché.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/samsung-climatisation-880x587.jpg"
+    },
+    {
+      "title": "Oracle ajoute des agents IA � Fusion Cloud Applications",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-oracle-ajoute-des-agents-ia-a-fusion-cloud-applications-99737.html",
+      "pubDate": "2026-03-26T08:57:15.000Z",
+      "contentSnippet": "A l'occasion de son évènement AI World Tour à Paris le 19 mars dernier, Oracle avait indiqué avoir plus de 600 assistants et (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Le malware StoatWaffle cible les d�veloppeurs",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-le-malware-stoatwaffle-cible-les-developpeurs-99743.html",
+      "pubDate": "2026-03-26T08:52:08.000Z",
+      "contentSnippet": "Des chercheurs de NTT Security ont trouvé une souche de malware nommée StoatWaffle qui cible les développeurs. Une campagne qui n’est (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Votre prochain iPhone pourrait avoir un appareil photo de 200 mégapixels : voici tout ce qu’on sait",
+      "link": "https://www.presse-citron.net/iphone-appareil-photo-200-megapixels/",
+      "pubDate": "Thu, 26 Mar 2026 08:50:14 +0000",
+      "contentSnippet": "Alors que de nombreux smartphones Android proposent déjà un capteur de 200 mégapixels pour l’appareil photo, Apple se contente de ses capteurs de 48 mégapixels. Cependant, d’après une rumeur, le capteur de 200 mégapixels serait enfin à l’étude chez la firme de Cupertino, pour un iPhone qui doit sortir en 2027.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/10/test-iphone-17-pro-max-880x587.jpg"
+    },
+    {
+      "title": "Les physiciens du CERN ont réussi à déplacer de l’antimatière dans un camion : pourquoi est-ce un exploit ?",
+      "link": "https://www.clubic.com/actualite-606244-les-physiciens-du-cern-ont-reussi-a-deplacer-de-l-antimatiere-dans-un-camion-pourquoi-est-ce-un-exploit.html",
+      "pubDate": "Thu, 26 Mar 2026 08:47:00 GMT",
+      "contentSnippet": "Pour la première fois de l'histoire, de l'antimatière a quitté un laboratoire et a été transportée à bord d'un camion pendant une heure et demie. En quantité négligeable, certes, mais il aura fallu des années de recherches  et l'expertise des meilleurs esprits du CERN (Organisation européenne pour la recherche nucléaire) pour y parvenir.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394943/raw"
+    },
+    {
+      "title": "Un fonctionnement entre -40°C à +60°C et une recharge en 11 minutes : cette batterie sodium pourrait ringardiser celles au lithium",
+      "link": "https://www.frandroid.com/survoltes/voitures-electriques/3040535_un-fonctionnement-entre-40c-a-60c-et-une-recharge-en-11-minutes-cette-batterie-sodium-pourrait-ringardiser-celles-au-lithium",
+      "pubDate": "Thu, 26 Mar 2026 08:44:19 +0000",
+      "contentSnippet": "Le constructeur chinois Beijing Automotive Group, plus connu sous le diminutif de BAIC, lève le voile sur les caractéristiques de sa batterie sodium \"Aurora\", présentée comme une alternative crédible au lithium, notamment en termes de prix.",
+      "source": "Frandroid",
+      "sourceColor": "#00b9ff",
+      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/batterie-baic.jpg?resize=1200,675&key=07c05d06&watermark"
+    },
+    {
+      "title": "« Les haters ne pourront rien faire », un développeur prend la défense du DLSS 5",
+      "link": "https://www.numerama.com/pop-culture/2218491-les-haters-ne-pourront-rien-faire-un-developpeur-prend-la-defense-du-dlss-5.html",
+      "pubDate": "Thu, 26 Mar 2026 08:41:50 +0000",
+      "contentSnippet": "Le DLSS 5 continue de faire couler de l'encre depuis sa présentation aussi impressionnante que sujette à la controverse. Cette fois, c'est au tour d'un développeur de s'exprimer pour prendre la défense de la technologie de Nvidia.",
+      "source": "Numerama",
+      "sourceColor": "#e5127d",
+      "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/capture-decran-2026-03-17-a-092248.jpg?resize=1200,675&key=bacd6492&watermark"
+    },
+    {
+      "title": "Avec sa voiture électrique, Xiaomi a réalisé en 2 ans ce qui a demandé 10 ans à Tesla",
+      "link": "https://www.frandroid.com/marques/xiaomi/3040567_avec-sa-voiture-electrique-xiaomi-a-realise-en-2-ans-ce-qui-a-demande-10-ans-a-tesla",
+      "pubDate": "Thu, 26 Mar 2026 08:41:25 +0000",
+      "contentSnippet": "La division automobile de Xiaomi, officiellement lancée fin 2023, vient de gagner de l’argent pour la première fois. Une très belle performance pour le constructeur de voitures électriques, qui rejoint un club très fermé.",
+      "source": "Frandroid",
+      "sourceColor": "#00b9ff",
+      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/xiaomi-su7-00022.jpeg?resize=1200,675&key=9452d3c5&watermark"
+    },
+    {
+      "title": "Énorme promotion sur la recharge : Lidl casse les prix (-25 %) dans ses stations",
+      "link": "https://www.presse-citron.net/enorme-promotion-recharge-lidl-casse-prix-25-stations/",
+      "pubDate": "Thu, 26 Mar 2026 08:32:30 +0000",
+      "contentSnippet": "Lidl applique à la recharge électrique ce qu'il applique aux pâtes et aux yaourts : des prix que personne d'autre ne veut descendre aussi bas.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/12/Borne-recharge-voiture-electrique-880x587.jpg"
+    },
+    {
+      "title": "Galaxy Z Fold 8 Wide : le design du smartphone anti-Apple de Samsung se dévoile en rendus 3D",
+      "link": "https://www.01net.com/actualites/galaxy-z-fold-8-wide-le-design-du-smartphone-anti-apple-de-samsung-se-devoile-en-rendus-3d.html",
+      "pubDate": "Thu, 26 Mar 2026 08:32:07 +0000",
+      "contentSnippet": "Le constructeur sud-coréen prépare une offensive majeure pour conserver sa place sur le marché des smartphones pliables. Afin de contrer frontalement le futur iPhone pliant d'Apple, Samsung s'apprête à lancer un tout nouveau modèle inédit au format élargi.",
+      "source": "01net",
+      "sourceColor": "#0033a0",
+      "image": "https://www.01net.com/app/uploads/2026/03/Galaxy-Z-Wide-Fold8-Rendus-3D-1-1344x896.jpg"
+    },
+    {
+      "title": "☕️ Saturne épluchée comme un oignon avec deux superbes images de Webb et Hubble",
+      "link": "https://next.ink/brief_article/saturne-epluchee-comme-un-oignon-avec-deux-superbes-images-de-webb-et-hubble/",
+      "pubDate": "Thu, 26 Mar 2026 08:23:00 +0000",
+      "contentSnippet": "L’Agence spatiale européenne (ESA) revient sur la mise en ligne de deux images avec les vues les plus détaillées de Saturne. L’agence spatiale américaine fait de même. Publication coordonnée logique puisque les télescopes James Webb et Hubble « se sont associés pour capturer de nouvelles vues de Saturne ». « Les observations dans l’infrarouge et […]",
+      "source": "Next Inpact",
+      "sourceColor": "#00a550",
+      "image": "https://i3.wp.com/next.ink/wp-content/uploads/2026/03/image-190-1024x512.png?ssl=1"
+    },
+    {
+      "title": "Intel Arc Pro B70 : 32 Go de VRAM à moins de 1000$ pour rivaliser avec NVIDIA sur l'IA locale",
+      "link": "https://www.clubic.com/actualite-606202-intel-arc-pro-b70-32-go-de-vram-pour-rivaliser-avec-nvidia-sur-l-ia-locale.html",
+      "pubDate": "Thu, 26 Mar 2026 08:19:00 GMT",
+      "contentSnippet": "Intel officialise l’Arc Pro B70, sa carte graphique professionnelle Battlemage : 32 Go de VRAM GDDR6, 32 cœurs Xe et 949$ pour viser l’inférence IA locale face à NVIDIA. Disponible dès maintenant.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394967/raw"
+    },
+    {
+      "title": "La surprise d’Apple : un capteur de 200 Mpx pour ses futurs iPhone ?",
+      "link": "https://www.frandroid.com/marques/apple/3040599_la-surprise-dapple",
+      "pubDate": "Thu, 26 Mar 2026 08:07:26 +0000",
+      "contentSnippet": "Apple serait en train de tester un capteur de 200 Mpx pour l'installer sur de futurs iPhone et ainsi tenir tête aux meilleurs smartphones en photo du côté d'Android.",
+      "source": "Frandroid",
+      "sourceColor": "#00b9ff",
+      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2025/10/apple-iphone-17-pro-max-2.jpg?resize=1200,675&key=eb2093a7&watermark"
+    },
+    {
+      "title": "L'Apple Vision Pro améliore son audio spatial grâce à une nouvelle astuce invisible",
+      "link": "https://www.clubic.com/actualite-606256-l-apple-vision-pro-ameliore-son-audio-spatial-grace-a-une-nouvelle-astuce-invisible.html",
+      "pubDate": "Thu, 26 Mar 2026 08:02:00 GMT",
+      "contentSnippet": "Apple ajoute une couche d'intelligence à l'audio spatial du Vision Pro. Le casque mémorise désormais les caractéristiques sonores de chaque pièce pour accélérer son initialisation lors des prochaines utilisations.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2294022/raw"
+    },
+    {
+      "title": "Le Galaxy S26 Ultra n’est toujours pas un champion de la réparation",
+      "link": "https://www.journaldugeek.com/2026/03/26/le-galaxy-s26-ultra-nest-toujours-pas-un-champion-de-la-reparation/",
+      "pubDate": "Thu, 26 Mar 2026 08:01:55 +0000",
+      "contentSnippet": "Samsung signe avec le Galaxy S26 Ultra un smartphone à la fois séduisant et frustrant. Séduisant, grâce à quelques choix techniques bien vus et un écran original. Frustrant, parce que dès qu’il s’agit de réparer l’appareil, les choses se compliquent sérieusement. Résultat : une très mauvaise note en réparabilité.",
+      "source": "Journal du Geek",
+      "sourceColor": "#ff6600",
+      "image": "https://www.journaldugeek.com/app/uploads/2026/03/Samsung-Galaxy-S26-Ultra-Test-23-1280x853.jpg"
+    },
+    {
+      "title": "Addiction, santé mentale des jeunes : Meta enchaîne les revers judiciaires",
+      "link": "https://www.01net.com/actualites/addiction-sante-mentale-des-jeunes-meta-enchaine-les-revers-judiciaires.html",
+      "pubDate": "Thu, 26 Mar 2026 08:01:25 +0000",
+      "contentSnippet": "Mauvaise semaine pour Meta, mais un signal fort pour les victimes des réseaux sociaux. Le groupe de Mark Zuckerberg a été condamné à deux reprises par la justice américaine pour ses manquements dans la protection des mineurs face aux contenus et comportements dangereux.",
+      "source": "01net",
+      "sourceColor": "#0033a0",
+      "image": "https://www.01net.com/app/uploads/2025/11/meta-icone-logo-1344x896.jpg"
+    },
+    {
+      "title": "Dyson V10 Konical : fini la corvée, la marque ajoute la fonctionnalité qui manquait à ses aspirateurs",
+      "link": "https://www.journaldugeek.com/2026/03/26/dyson-v10-konical-fini-la-corvee-la-marque-ajoute-la-fonctionnalite-qui-manquait-a-ses-aspirateurs/",
+      "pubDate": "Thu, 26 Mar 2026 07:55:45 +0000",
+      "contentSnippet": "Dyson franchit un cap avec le V10 Konical, son premier aspirateur sans fil équipé d'une station de vidage autonome. Plus besoin de toucher la poussière : la machine s'en charge toute seule.",
+      "source": "Journal du Geek",
+      "sourceColor": "#ff6600",
+      "image": "https://www.journaldugeek.com/app/uploads/2026/03/dyson-v10-konical-1280x853.jpg"
+    },
+    {
+      "title": "L’Allemagne impose ODF comme format de document pour sa Deutschland Stack souveraine",
+      "link": "https://next.ink/230644/lallemagne-impose-odf-comme-format-de-document-pour-sa-deutschland-stack-souveraine/",
+      "pubDate": "Thu, 26 Mar 2026 07:54:41 +0000",
+      "contentSnippet": "L’Allemagne vient d’imposer le recours à Open Document Format (ODF) comme standard pour l’enregistrement des documents bureautiques au sein de la pile des logiciels et services numériques de son administration. La Document Foundation, qui soutient ce standard ouvert, salue la décision et lance un appel aux autres pays européens. La nouvelle aurait pu passer inaperçue, […]",
+      "source": "Next Inpact",
+      "sourceColor": "#00a550",
+      "image": "https://next.ink/wp-content/uploads/2026/03/Allemagne1.webp"
+    },
+    {
+      "title": "DPO Consulting int�gre le p�le Advisory de Grant Thornton France",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-dpo-consulting-integre-le-pole-advisory-de-grant-thornton-france-99738.html",
+      "pubDate": "2026-03-26T07:53:47.000Z",
+      "contentSnippet": "Le cabinet d’audit Grant Thornton France (2 800 collaborateurs) rachète DPO Consulting, une société qui accompagne ses plus (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Aramisauto nomme Romain Venturi CTO",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-aramisauto-nomme-romain-venturi-cto-99734.html",
+      "pubDate": "2026-03-26T07:52:38.000Z",
+      "contentSnippet": "La plateforme de vente en ligne de véhicules d'occasion reconditionnés Aramisauto nomme Romain Venturi au poste de CTO en remplacement de (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Les pistes pour �viter la pression de SAP sur S/4 Hana",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-les-pistes-pour-eviter-la-pression-de-sap-sur-s-4-hana-99735.html",
+      "pubDate": "2026-03-26T07:52:09.000Z",
+      "contentSnippet": "L'annonce du refus de Kingfisher de migrer vers SAP S/4 Hana a fait grand bruit fin 2025. Le géant de la distribution (à la tête (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Le navigateur web Samsung arrive officiellement sur Windows pour concurrencer Google Chrome",
+      "link": "https://www.frandroid.com/marques/samsung/3040603_le-navigateur-web-samsung-arrive-officiellement-sur-windows-pour-concurrencer-google-chrome",
+      "pubDate": "Thu, 26 Mar 2026 07:44:55 +0000",
+      "contentSnippet": "Après être resté un long moment en version bêta, le navigateur web de Samsung est enfin disponible en mouture stable pour les ordinateurs Windows. Un nouveau concurrent à Chrome qui se veut intégré à l’écosystème Samsung.",
+      "source": "Frandroid",
+      "sourceColor": "#00b9ff",
+      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/capture5.jpg?resize=1200,675&key=9438f66b&watermark"
+    },
+    {
+      "title": "En se rapprochant toujours plus de Google, le navigateur Opera n'a plus grand chose d'européen",
+      "link": "https://www.clubic.com/actualite-606163-en-se-rapprochant-toujours-plus-de-google-le-navigateur-opera-n-a-plus-grand-chose-d-europeen.html",
+      "pubDate": "Thu, 26 Mar 2026 07:41:00 GMT",
+      "contentSnippet": "Si vous comptiez couper court à Google en troquant Chrome pour Opera, alors peut-être vaudrait-il mieux y réfléchir à deux reprises. L'éditeur norvégien semble renforcer toujours plus les synergies avec le géant californien.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394688/raw"
+    },
     {
       "title": "20 secondes pour régler sa longueur : on a roulé avec cet étonnant vélo cargo électrique",
       "link": "https://www.frandroid.com/survoltes/velo-electrique/3039945_20-secondes-pour-regler-sa-longueur-on-a-roule-avec-cet-etonnant-velo-cargo-electrique",
@@ -48,6 +300,15 @@
       "image": "https://i0.wp.com/next.ink/wp-content/uploads/2026/03/image-188-1024x683.png?ssl=1"
     },
     {
+      "title": "YouTube Studio plante et vous empêche de publier des vidéos : la plateforme réagit et donne un plan B",
+      "link": "https://www.clubic.com/actualite-606235-youtube-studio-plante-et-vous-empeche-de-publier-des-videos-la-plateforme-reagit-et-donne-un-plan-b.html",
+      "pubDate": "Thu, 26 Mar 2026 07:20:00 GMT",
+      "contentSnippet": "Un bug affecte YouTube Studio depuis plusieurs jours. Les créateurs ne peuvent plus, pour certains, importer de vidéos depuis leur ordinateur, et restent bloqués à l'étape « Vérifications ». La plateforme a pris la parole.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394934/raw"
+    },
+    {
       "title": "Ce kit de démarrage Philips Hue ultra complet est bradé à moins de 150 €",
       "link": "https://www.frandroid.com/bons-plans/3039897_ce-kit-de-demarrage-philips-hue-ultra-complet-est-brade-a-moins-de-150-e",
       "pubDate": "Thu, 26 Mar 2026 07:16:00 +0000",
@@ -64,6 +325,15 @@
       "source": "Next Inpact",
       "sourceColor": "#00a550",
       "image": "https://next.ink/wp-content/uploads/2024/02/EnfantCalebWoods.png"
+    },
+    {
+      "title": "La France décroche le jackpot, l'Europe lui accorde 15 milliards d'euros pour sa défense",
+      "link": "https://www.clubic.com/actualite-606232-la-france-decroche-le-jackpot-l-europe-lui-accorde-15-milliards-d-euros-pour-sa-defense.html",
+      "pubDate": "Thu, 26 Mar 2026 07:02:00 GMT",
+      "contentSnippet": "La Commission européenne a approuvé, mercredi, les plans de défense SAFE de la France et de la Tchéquie. Pour l'Hexagone, c'est un financement de plus de 15 milliards d'euros dont il va bénéficier.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394931/raw"
     },
     {
       "title": "Critique Un Très Mauvais Pressentiment : que vaut la série horrifique des papas de Stranger Things ?",
@@ -111,6 +381,24 @@
       "image": "https://www.01net.com/app/uploads/2026/03/Test-Samsung-Galaxy-S26-Ultra-Avis-14-1344x896.jpg"
     },
     {
+      "title": "C’est quoi le 996, cette méthode de travail complètement folle qui cartonne dans la Silicon Valley (et arrive en France) ?",
+      "link": "https://www.presse-citron.net/cest-quoi-le-996-cette-methode-de-travail-completement-folle-qui-cartonne-dans-la-silicon-valley-et-arrive-en-france/",
+      "pubDate": "Thu, 26 Mar 2026 06:50:15 +0000",
+      "contentSnippet": "Importé de Chine, le 996 devient le mantra extrême des jeunes pousses de la Silicon Valley.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/06/pexels-olly-3807738-880x587.jpg"
+    },
+    {
+      "title": "Selon Google, la navigation Web sur Android serait 47% plus rapide que sur iPhone",
+      "link": "https://www.clubic.com/actualite-606241-selon-google-la-navigation-web-sur-android-serait-47-plus-rapide-que-sur-iphone.html",
+      "pubDate": "Thu, 26 Mar 2026 06:47:00 GMT",
+      "contentSnippet": "Google affirme que les appareils Android devancent leurs concurrents sur les tests de performance de navigation web. Des mesures effectuées sur la dernière édition mobile de Chrome montrent un vrai gain de performances.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2310498/raw"
+    },
+    {
       "title": "Le Galaxy Z Fold 8 « Wide » se dévoile tout en rendus 3D",
       "link": "https://www.frandroid.com/marques/samsung/3040551_le-galaxy-z-fold-8-wide-se-devoile-tout-en-rendus-3d",
       "pubDate": "Thu, 26 Mar 2026 06:42:13 +0000",
@@ -138,6 +426,24 @@
       "image": "https://www.01net.com/app/uploads/2026/03/01net-Morning-18-1344x896.jpg"
     },
     {
+      "title": "Amazon casse les prix : 10 bons plans tech à surveiller de près ce matin",
+      "link": "https://www.clubic.com/bons-plans-605899-ventes-flash-amazon-casse-10-prix-tech-ce-soir-jusqu-a--49.html",
+      "pubDate": "Thu, 26 Mar 2026 06:30:00 GMT",
+      "contentSnippet": "Casques audio, SSD, téléviseurs… Amazon multiplie les remises sur des produits populaires. Voici une sélection de 10 offres au rapport qualité/prix intéressant disponibles pour quelques heures encore.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2380237/raw"
+    },
+    {
+      "title": "Vous avez cherché un VPN sur Google ? Vous avez peut-être installé un virus",
+      "link": "https://www.clubic.com/bons-plans-605962-vous-avez-cherche-un-vpn-sur-google-vous-avez-peut-etre-installe-un-virus.html",
+      "pubDate": "Thu, 26 Mar 2026 06:30:00 GMT",
+      "contentSnippet": "Taper “VPN gratuit” dans Google peut sembler anodin. Pourtant, cette simple recherche suffit parfois à déclencher l’installation d’un logiciel malveillant sur votre machine, sans que vous vous en rendiez compte. Des cybercriminels exploitent les résultats sponsorisés pour faire passer des malwares pour des outils légitimes.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394451/raw"
+    },
+    {
       "title": "Cette box internet sans engagement combine 8 Gb/s, Wi‑Fi 7 et 48 euros de frais remboursés",
       "link": "https://www.frandroid.com/bons-plans/3040081_cette-box-internet-sans-engagement-combine-8-gb-s-wi-fi-7-et-48-euros-de-frais-rembourses",
       "pubDate": "Thu, 26 Mar 2026 06:25:00 +0000",
@@ -145,6 +451,51 @@
       "source": "Frandroid",
       "sourceColor": "#00b9ff",
       "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/683025967.jpg?resize=1200,675&key=e56bdae4&watermark"
+    },
+    {
+      "title": "tvOS 26.4 peaufine l’Apple TV avec un meilleur audio et une interface simplifiée",
+      "link": "https://www.clubic.com/actualite-606247-tvos-26-4-peaufine-l-apple-tv-avec-un-meilleur-audio-et-une-interface-simplifiee.html",
+      "pubDate": "Thu, 26 Mar 2026 06:14:00 GMT",
+      "contentSnippet": "Apple vient de déployer une mise à jour pour ses boîtiers multimédias qui corrige plusieurs problèmes irritants. L'occasion également de faire le ménage dans l'interface en supprimant deux applications devenues obsolètes.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2377891/raw"
+    },
+    {
+      "title": "« 30 centimes moins cher » : ces automobilistes français ont trouvé une technique parfaite pour économiser sur l’essence et le diesel",
+      "link": "https://www.presse-citron.net/30-centimes-moins-cher-ces-automobilistes-francais-ont-trouve-une-technique-parfaite-pour-economiser-sur-lessence-et-le-diesel/",
+      "pubDate": "Thu, 26 Mar 2026 05:31:36 +0000",
+      "contentSnippet": "Certains conducteurs malins s’en tirent à bon compte.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/essence-carburant-station-service-france-880x587.jpg"
+    },
+    {
+      "title": "Test MSI Prestige 14 AI+ : un rival crédible face au Samsung Galaxy Book6 Pro ?",
+      "link": "https://www.presse-citron.net/test-msi-prestige-14-ai/",
+      "pubDate": "Thu, 26 Mar 2026 05:30:45 +0000",
+      "contentSnippet": "Ce nouveau PC ultra portable signé MSI est équipé d'un écran OLED de 14 pouces, d'une grosse batterie et - surtout - du dernier processeur Core Ultra X7 d'Intel. Il y a la tout ce qu'il faut pour assurer des performances, une qualité d'affichage et une endurance appréciables. Le tout dans un boîtier compact et léger. Du moins, en théorie. Alors ? Pari réussi ?",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/MSI-Prestige-14-AI-mea-1-1-880x587.jpg"
+    },
+    {
+      "title": "Xavier Dupont de Ligonnès localisé au Texas ? L’incroyable appel à témoins de la police américaine",
+      "link": "https://www.presse-citron.net/xavier-dupont-de-ligonnes-localise-au-texas-lincroyable-appel-a-temoins-de-la-police-americaine/",
+      "pubDate": "Thu, 26 Mar 2026 04:12:30 +0000",
+      "contentSnippet": "Quinze ans après les faits, les forces de l’ordre demandent l’aide des internautes.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Xavier-Dupont-de-Ligonnes-880x587.jpg"
+    },
+    {
+      "title": "Voici comment acheter le Galaxy A37, le smartphone abordable de Samsung, au meilleur prix",
+      "link": "https://www.presse-citron.net/voici-comment-acheter-le-galaxy-a37-le-smartphone-abordable-de-samsung-au-meilleur-prix/",
+      "pubDate": "Wed, 25 Mar 2026 19:31:08 +0000",
+      "contentSnippet": "Après la série Galaxy S26, les nouveaux smartphones abordables de Samsung, dont le Galaxy A37, débarquent en mars 2026. Sur ce smartphone, Samsung essaie de proposer une bonne fiche technique et quelques avantages intéressants, à un prix compétitif. Et si vous êtes intéressé, notre guide vous aide à acheter le Galaxy A37 au meilleur prix.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Galaxy-A37-19-880x587.jpg"
     },
     {
       "title": "La série Harry Potter n’arrivera finalement pas en 2027 (teaser)",
@@ -156,6 +507,15 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/harry-potter-remake-1280x853.jpg"
     },
     {
+      "title": "Google a donné à Apple le droit de faire exactement ce qu'Anthropic accuse la Chine de faire",
+      "link": "https://www.clubic.com/actualite-606229-apple-n-a-pas-juste-achete-le-droit-d-utiliser-google-gemini-elle-peut-dissequer-le-modele-pour-entrainer-les-siens.html",
+      "pubDate": "Wed, 25 Mar 2026 19:16:00 GMT",
+      "contentSnippet": "Apple et Google ont signé un accord à près d'un milliard de dollars par an. Ce que peu avaient mesuré, c'est ce qu'Apple a contractuellement le droit d'en faire.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2395009/raw"
+    },
+    {
       "title": "Harry Potter :  le moment tant attendu est arrivé, voici la bande-annonce du reboot",
       "link": "https://www.numerama.com/pop-culture/2217993-harry-potter-le-moment-tant-attendu-est-arrive-voici-la-bande-annonce-du-reboot.html",
       "pubDate": "Wed, 25 Mar 2026 19:06:01 +0000",
@@ -163,6 +523,15 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/dominic-mclaughlin-2.jpg?resize=1200,675&key=219582a6&watermark"
+    },
+    {
+      "title": "Phishing par SMS : sept condamnés pour une escroquerie high-tech",
+      "link": "https://www.clubic.com/actualite-606214-phishing-par-sms-sept-condamnes-pour-une-escroquerie-high-tech.html",
+      "pubDate": "Wed, 25 Mar 2026 18:45:00 GMT",
+      "contentSnippet": "Le 13 mars dernier, le tribunal correctionnel de Paris a condamné six hommes et une femme après une enquête ouverte fin 2022. Dans le dossier, des voitures circulaient dans la capitale avec un équipement placé dans le coffre. À chaque passage, des SMS frauduleux ont été envoyés vers les smartphones situés à proximité. Les messages reprenaient l’apparence de services connus et incitaient à transmettre des informations personnelles.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394859/raw"
     },
     {
       "title": "Daredevil: Born Again Saison 2: qui est M. Charles et pourquoi est-il si puissant ?",
@@ -174,6 +543,24 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/M.-Charles-1280x853.jpg"
     },
     {
+      "title": "Où acheter le Galaxy A57 au meilleur prix ? Voici le guide",
+      "link": "https://www.presse-citron.net/ou-acheter-le-galaxy-a57-au-meilleur-prix-voici-le-guide/",
+      "pubDate": "Wed, 25 Mar 2026 18:31:45 +0000",
+      "contentSnippet": "En mars 2026, Samsung lance de nouveaux smartphones abordables, dont le Galaxy A57. Sur ce modèle, le constructeur propose un beau design, une fiche technique correcte, tout en gardant un prix raisonnable. Si ce smartphone vous intéresse, voici le guide pour trouver les bons plans pour le Galaxy A57 de Samsung. Il s’agit de l’une des meilleures alternatives aux produits haut de gamme du constructeur.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Galaxy-A57-13-880x587.jpg"
+    },
+    {
+      "title": "Sony lance ses TV Bravia 2 II et 3 II… en attendant ses futurs modèles MiniLED",
+      "link": "https://www.clubic.com/actualite-606142-sony-lance-ses-tv-bravia-2-ii-et-3-ii-en-attendant-ses-futurs-modeles-miniled.html",
+      "pubDate": "Wed, 25 Mar 2026 18:19:00 GMT",
+      "contentSnippet": "Sony profite de ce début de printemps pour lever le voile sur une partie de sa gamme de téléviseurs 2026, avec l’arrivée des Bravia 2 II et Bravia 3 II. Deux modèles LED qui viennent renouveler l’entrée et le milieu de gamme du constructeur japonais.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394583/raw"
+    },
+    {
       "title": "Vivre sur Mars pourrait avoir des effets irréversibles sur le corps, selon cette étude",
       "link": "https://www.journaldugeek.com/2026/03/25/vivre-mars-effets-irreversibles-corps-etude/",
       "pubDate": "Wed, 25 Mar 2026 18:02:21 +0000",
@@ -181,6 +568,15 @@
       "source": "Journal du Geek",
       "sourceColor": "#ff6600",
       "image": "https://www.journaldugeek.com/app/uploads/2025/12/Mars-colonie-1280x853.jpg"
+    },
+    {
+      "title": "\"Scam center\" : un français pourrait être séquestré au Cambodge dans une ferme à cyberescroqueries",
+      "link": "https://www.clubic.com/actualite-606205-scam-center-un-francais-pourrait-etre-sequestre-au-cambodge-dans-une-ferme-a-cyberescroqueries.html",
+      "pubDate": "Wed, 25 Mar 2026 18:02:00 GMT",
+      "contentSnippet": "Un Français disparu depuis l’été 2025 pourrait être retenu dans un centre de cyberfraude en Asie du Sud-Est. Les Nations unies estiment à plus de 300 000 le nombre de personnes exploitées dans ces « scam centers », pour des revenus qui atteignent plusieurs dizaines de milliards de dollars chaque année.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394760/raw"
     },
     {
       "title": "Chez Nintendo, les jeux physiques pour la Switch 2 vont coûter plus cher que les versions dématérialisées",
@@ -208,6 +604,24 @@
       "source": "Journal du Geek",
       "sourceColor": "#ff6600",
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/bienvenue-a-derry-saison-2-1280x853.jpg"
+    },
+    {
+      "title": "Marche-arrière toute ! Elon Musk revient sur sa politique de rémunération des créateurs de contenus",
+      "link": "https://www.clubic.com/actualite-606196-marche-arriere-toute-elon-musk-revient-sur-sa-politique-de-remiuneration-des-createurs-de-contenus.html",
+      "pubDate": "Wed, 25 Mar 2026 17:14:00 GMT",
+      "contentSnippet": "X a annoncé mardi soir une refonte de son programme de partage des revenus, pour donner plus de poids aux impressions locales. Quelques heures plus tard, Elon Musk suspendait lui-même la mesure.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394754/raw"
+    },
+    {
+      "title": "Telex : OpenAI d�branche Sora, Le Cnous pirat�, Firefox inclut un VPN gratuit",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-telex-openai-debranche-sora-le-cnous-pirate-firefox-inclut-un-vpn-gratuit-99741.html",
+      "pubDate": "2026-03-25T17:11:17.000Z",
+      "contentSnippet": "- OpenAI débranche Sora. Faute de modèle économique et très gourmande en ressources, l'application grand public de vidéo (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
     },
     {
       "title": "Dans quel ordre regarder les films sur Le Seigneur des anneaux ?",
@@ -246,6 +660,15 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/Tineco-PURE-ONE-A90S-1280x853.jpg"
     },
     {
+      "title": "Afeela, c’est fini : Sony et Honda mettent fin à leur projet de voiture électrique (avec une intégration de PlayStation)",
+      "link": "https://www.presse-citron.net/afeela-fini-sony-honda-fin-projet-voiture-electrique/",
+      "pubDate": "Wed, 25 Mar 2026 17:01:41 +0000",
+      "contentSnippet": "Honda et Sony annoncent l’arrêt du développement d’Afeela 1, la voiture électrique qui devait sortir cette année. Cette décision est prise dans le cadre d’une réévaluation de la stratégie de Honda, dont la branche automobile a subi une forte baisse de rentabilité.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/12/Afeela-1-880x587.jpg"
+    },
+    {
       "title": "Boulanger retire 500 € sur ce puissant PC portable gamer Lenovo sous RTX 5070",
       "link": "https://www.frandroid.com/bons-plans/2848863_boulanger-retire-500-euros-sur-ce-puissant-pc-portable-gamer-lenovo-sous-rtx-5070",
       "pubDate": "Wed, 25 Mar 2026 16:58:38 +0000",
@@ -262,6 +685,15 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2024/12/holland-surpris.jpg?resize=1200,675&key=a0d412c6&watermark"
+    },
+    {
+      "title": "Bien trop chère à produire, AYANEO abandonne sa console NEXT 2 à base de Ryzen AI Max+ 395",
+      "link": "https://www.clubic.com/actualite-606160-bien-trop-chere-a-produire-ayaneo-abandonne-sa-console-next-2-a-base-de-ryzen-ai-max-395.html",
+      "pubDate": "Wed, 25 Mar 2026 16:55:00 GMT",
+      "contentSnippet": "AYANEO ne souhaite pas ajuster les prix de sa machine au jour le jour, mais ne peut plus rentabiliser la production de la NEXT 2.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2356552/raw"
     },
     {
       "title": "Comme Apple, Sony renonce à son projet de voiture électrique",
@@ -291,6 +723,24 @@
       "image": "https://www.journaldugeek.com/app/uploads/2025/12/sony-honda-remote-play-ps5-1280x853.jpg"
     },
     {
+      "title": "Samsung commence à décoller dans le 2 nm. Bientôt un rival sérieux pour TSMC ?",
+      "link": "https://www.clubic.com/actualite-606154-samsung-commence-a-decoller-dans-le-2-nm-bientot-un-rival-serieux-pour-tsmc.html",
+      "pubDate": "Wed, 25 Mar 2026 16:37:00 GMT",
+      "contentSnippet": "Le géant sud-coréen continue de travailler sur sa technologie de production de puces à 2 nm. Et il aurait réussi à atteindre un stade plus intéressant de la production.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2090058/raw"
+    },
+    {
+      "title": "« Des véhicules techniquement meilleurs, de qualité et plus abordables » : la marque Chery débarque en France",
+      "link": "https://www.presse-citron.net/vehicules-techniquement-meilleurs-qualite-abordables-marque-chery-debarque-france/",
+      "pubDate": "Wed, 25 Mar 2026 16:30:34 +0000",
+      "contentSnippet": "Les constructeurs européens traversent une période de turbulences sans précédent. Et dans ce contexte déjà tendu, une nouvelle vague chinoise s'apprête à déferler sur le marché français. Elle s’appelle Chery.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/chery-jaecoo-880x587.jpg"
+    },
+    {
       "title": "J’ai testé le MacBook Neo : le meilleur premier MacBook de beaucoup de gens ?",
       "link": "https://www.frandroid.com/marques/apple/3031705_macbook-neo-test-complet",
       "pubDate": "Wed, 25 Mar 2026 16:30:00 +0000",
@@ -298,6 +748,15 @@
       "source": "Frandroid",
       "sourceColor": "#00b9ff",
       "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/macbook-neo-frandroid-7.jpg?resize=1200,675&key=ece97971&watermark"
+    },
+    {
+      "title": "Une image de l'Europe toutes les 2,5 minutes, le satellite européen MTG-I2 va révolutionner les prévisions météo",
+      "link": "https://www.clubic.com/actualite-606187-une-image-de-l-europe-toutes-les-2-5-minutes-le-satellite-europeen-mtg-i2-va-revolutionner-les-previsions-meteo.html",
+      "pubDate": "Wed, 25 Mar 2026 16:28:00 GMT",
+      "contentSnippet": "Le satellite météorologique MTG-I2 a validé ses derniers tests techniques dans les salles blanches de Thales Alenia Space à Cannes. Son lancement à bord d'Ariane 62 est fixé à l'été 2026.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394757/raw"
     },
     {
       "title": "Sony annule sa voiture PlayStation, et personne n’est surpris",
@@ -309,6 +768,24 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2025/01/afeela-ces.jpg?resize=1200,675&key=0c27b592&watermark"
     },
     {
+      "title": "Des mises � jour hebdomadaires pour Visual Studio Code",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-des-mises-a-jour-hebdomadaires-pour-visual-studio-code-99740.html",
+      "pubDate": "2026-03-25T16:17:00.000Z",
+      "contentSnippet": "Petit changement pour les mises à jour de l’éditeur Visual Studio Code de Microsoft. Habituellement publiées en début (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "L'IA draine la batterie de votre smartphone Pixel ? 5 réglages pour récupérer de l'autonomie",
+      "link": "https://www.clubic.com/actualite-606052-l-ia-draine-la-batterie-de-votre-smartphone-pixel-5-reglages-pour-recuperer-de-l-autonomie.html",
+      "pubDate": "Wed, 25 Mar 2026 16:14:00 GMT",
+      "contentSnippet": "L'utilisation de l'IA peut fortement impacter l'autonomie de votre Google Pixel. On vous partage 5 astuces pour reprendre le contrôle.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2384941/raw"
+    },
+    {
       "title": "☕️ Santé mentale des mineurs : Meta condamné à 375 millions de dollars d’amende",
       "link": "https://next.ink/brief_article/sante-mentale-des-mineurs-meta-condamne-a-375-millions-de-dollars-damende/",
       "pubDate": "Wed, 25 Mar 2026 16:07:26 +0000",
@@ -316,6 +793,15 @@
       "source": "Next Inpact",
       "sourceColor": "#00a550",
       "image": "https://i3.wp.com/next.ink/wp-content/uploads/2025/08/Meta-2-1024x496.webp?ssl=1"
+    },
+    {
+      "title": "“Il est dans vos pâtes et votre pain” : 1 Français sur 2 est contaminé par ce poison invisible",
+      "link": "https://www.presse-citron.net/dans-pates-pain-1-francais-2-contamine-poison-invisible/",
+      "pubDate": "Wed, 25 Mar 2026 16:03:27 +0000",
+      "contentSnippet": "Un rapport de l'Agence nationale de sécurité sanitaire tire la sonnette d'alarme sur l'exposition des Français au cadmium, un métal lourd cancérogène, présent massivement dans notre alimentation quotidienne. En cause : nos pratiques agricoles et une réglementation insuffisante.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/poison-cadmium-etude-pates-pain-880x587.jpg"
     },
     {
       "title": "Le réchauffement des océans atteint un niveau historique : un signe critique du dérèglement climatique",
@@ -336,15 +822,6 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/cybersecurite.avif?resize=1200,675&key=3924b671&watermark"
     },
     {
-      "title": "Sony Bravia Theatre : des barres de son, des caissons et même des enceintes arrière pour un home cinéma totalement immersif",
-      "link": "https://www.frandroid.com/marques/sony/3039349_bravia-theatre-des-barres-de-son-des-caissons-et-meme-des-enceintes-arriere-pour-un-home-cinema-totalement-immersif",
-      "pubDate": "Wed, 25 Mar 2026 16:02:00 +0000",
-      "contentSnippet": "Sony étoffe ses gammes de produits audio pour le Home Cinéma avec l’arrivée sur le marché de deux nouvelles barres de son, deux caissons de basses et un kit d’enceintes arrière, tous venant s’interfacer les uns avec les autres.",
-      "source": "Frandroid",
-      "sourceColor": "#00b9ff",
-      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/sony-bravia-theatre-bar-7-ht-a7100-immersive.jpg?resize=1200,675&key=0b95d910&watermark"
-    },
-    {
       "title": "Sony renouvelle deux téléviseurs Bravia et fait le plein côté audio",
       "link": "https://www.01net.com/actualites/sony-renouvelle-deux-televiseurs-bravia-et-fait-le-plein-cote-audio.html",
       "pubDate": "Wed, 25 Mar 2026 16:00:51 +0000",
@@ -354,13 +831,13 @@
       "image": "https://www.01net.com/app/uploads/2026/03/GWXBRAVIA2II_Cinematic_PictureSound_2880x1748-1344x816.jpg"
     },
     {
-      "title": "Bravia 3 II et Bravia 2 II : les nouvelles TV LCD d’entrée de gamme chez Sony",
-      "link": "https://www.frandroid.com/produits-android/tv-connectee-produits/3038935_bravia-3-ii-et-bravia-2-ii-les-nouvelles-tv-lcd-dentree-de-gamme-chez-sony",
-      "pubDate": "Wed, 25 Mar 2026 16:00:00 +0000",
-      "contentSnippet": "Sony vient enfin de dévoiler une partie de ses nouvelles gammes TV pour l’année 2026. On commence avec les deux séries Bravia 3 II et Bravia 2 II embarquant une dalle Direct LED voulant respecter « l’intention des créateurs ». En voici tous les détails.",
-      "source": "Frandroid",
-      "sourceColor": "#00b9ff",
-      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/sony-bravia-3-ii-lifestyle.jpg?resize=1200,675&key=fa9beadb&watermark"
+      "title": "Sony veut simplifier le home cinéma : ses nouvelles barres de son misent tout sur l’immersion",
+      "link": "https://www.clubic.com/actualite-606094-sony-veut-simplifier-le-home-cinema-ses-nouvelles-barres-de-son-misent-tout-sur-l-immersion.html",
+      "pubDate": "Wed, 25 Mar 2026 15:59:00 GMT",
+      "contentSnippet": "Sony dévoile une nouvelle gamme audio BRAVIA Theatre avec une promesse claire : rendre le home cinéma plus simple à installer, sans sacrifier l’immersion. Barres de son, caissons de basses et enceintes arrière composent un écosystème pensé pour évoluer selon les besoins.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394448/raw"
     },
     {
       "title": "FIFA : le nouveau jeu vidéo vient d’être annoncé",
@@ -370,6 +847,15 @@
       "source": "Journal du Geek",
       "sourceColor": "#ff6600",
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/fifa-heroes-annonce-1280x853.jpg"
+    },
+    {
+      "title": "Alerte ! Après une cyberattaque contre le Crous, les données de plus de 770 000 étudiants dans la nature",
+      "link": "https://www.clubic.com/actualite-606151-alerte-apres-une-cyberattaque-contre-le-crous-les-donnees-de-plus-de-770-000-etudiants-dans-la-nature.html",
+      "pubDate": "Wed, 25 Mar 2026 15:46:00 GMT",
+      "contentSnippet": "Une nouvelle cyberattaque vient de cibler une institution publique française. Cette fois, ce sont les Crous qui ont vu les données de leurs étudiants être collectées par des hackers.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394664/raw"
     },
     {
       "title": "Meta pourrait licencier 15 800 employés, soit 20 % de ses effectifs",
@@ -390,6 +876,15 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2021/07/0483212jpg-r-1920-1080-f-jpg-q-x-xxyxx.jpg?resize=1200,675&key=9e49ef0f&watermark"
     },
     {
+      "title": "Palo Alto Networks renforce la s�curit� des agents IA dans Prisma Airs",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-palo-alto-networks-renforce-la-securite-des-agents-ia-dans-prisma-airs-99739.html",
+      "pubDate": "2026-03-25T15:36:48.000Z",
+      "contentSnippet": "La prolifération des agents inquiètent les RSSI qui les voient comme une menace potentielle. Pour avoir une meilleure visibilité, (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
       "title": "Deepfakes pornographiques : l’Allemagne secouée par un scandale de « viols virtuels »",
       "link": "https://next.ink/230672/deepfakes-pornographiques-lallemagne-secouee-par-un-scandale-de-viols-virtuels/",
       "pubDate": "Wed, 25 Mar 2026 15:33:33 +0000",
@@ -397,6 +892,15 @@
       "source": "Next Inpact",
       "sourceColor": "#00a550",
       "image": "https://next.ink/wp-content/uploads/2024/04/Deepfake_Hitchcock3.webp"
+    },
+    {
+      "title": "Rachat de la start-up chinoise Manus par Meta : sous fond de guerre de l'IA, la géopolitique s'en mêle",
+      "link": "https://www.clubic.com/actualite-606118-rachat-de-la-start-up-chinoise-manus-par-meta-sous-fond-de-guerre-de-l-ia-la-geopolitique-s-en-mele.html",
+      "pubDate": "Wed, 25 Mar 2026 15:31:00 GMT",
+      "contentSnippet": "Le rachat de Manus AI, spécialiste des agents d'intelligence artificielle (IA), par Meta se complique. Et il fallait s'y attendre, puisqu'il s'agit d'une start-up chinoise. Les autorités ne semblent pas décidées à la laisser partir chez l'ennemi aussi facilement…",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394493/raw"
     },
     {
       "title": "Lancement européen des lunettes Display de Meta : pourquoi ça coince",
@@ -408,24 +912,6 @@
       "image": "https://www.01net.com/app/uploads/2025/09/Meta-Ray-Ban-Display-1344x896.jpg"
     },
     {
-      "title": "LG casse le prix de ce pack vidéoprojecteur 4K avec barre de son, pour un vrai home cinéma",
-      "link": "https://www.frandroid.com/bons-plans/3039847_lg-casse-le-prix-de-ce-pack-videoprojecteur-4k-avec-barre-de-son-pour-un-vrai-home-cinema",
-      "pubDate": "Wed, 25 Mar 2026 15:28:00 +0000",
-      "contentSnippet": "On sait que la partie audio est souvent le point noir des vidéoprojecteurs. Alors quand ce modèle 4K de chez LG se trouve dans un pack avec une barre de son à 799 euros au lieu de 1 018 euros, c'est une belle affaire pour les cinéphiles.",
-      "source": "Frandroid",
-      "sourceColor": "#00b9ff",
-      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2024/03/lifestyle-use1.jpg?resize=1200,675&key=c594eb0f&watermark"
-    },
-    {
-      "title": "Votre ordinateur ou smartphone peut-il faire tourner une IA ? Ce site vous donne la réponse en un clic",
-      "link": "https://www.frandroid.com/culture-tech/intelligence-artificielle/3040031_votre-ordinateur-ou-smartphone-peut-il-faire-tourner-une-ia-ce-site-vous-donne-la-reponse-en-un-clic",
-      "pubDate": "Wed, 25 Mar 2026 15:26:08 +0000",
-      "contentSnippet": "Un nouveau site Internet intègre un outil très simple mais ultra pratique : CanIRun.ai permet, en un clic, de savoir si votre appareil (smartphone, tablette ou PC) est capable de faire tourner une intelligence artificielle en local directement sur votre machine.",
-      "source": "Frandroid",
-      "sourceColor": "#00b9ff",
-      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/gemini-generated-image-100uzg100uzg100u.jpg?resize=1200,675&key=631966bc&watermark"
-    },
-    {
       "title": "Amazon baisse déjà le prix du dernier MacBook Air M5",
       "link": "https://www.numerama.com/tech/2218113-amazon-baisse-deja-le-prix-du-dernier-macbook-air-m5.html",
       "pubDate": "Wed, 25 Mar 2026 15:22:44 +0000",
@@ -433,6 +919,15 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/macbook-air-m5.jpg?resize=1200,675&key=322c5656&watermark"
+    },
+    {
+      "title": "En plein doute sur l’IA, Trump crée un « Conseil des Sages » avec Mark Zuckerberg et Jensen Huang",
+      "link": "https://www.presse-citron.net/en-plein-doute-sur-lia-trump-cree-un-conseil-des-sages-avec-mark-zuckerberg-et-jensen-huang/",
+      "pubDate": "Wed, 25 Mar 2026 15:22:07 +0000",
+      "contentSnippet": "Donald Trump vient de créer un « conseil des sages » sur la science et la technologie. S’il a déjà existé par le passé, c’est la première fois qu’il est aussi étroitement lié à la tech et surtout à l’intelligence artificielle.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/10/Trump-880x587.jpg"
     },
     {
       "title": "Terminator 2 ce soir à la TV : cette scène a révolutionné le cinéma",
@@ -444,13 +939,13 @@
       "image": "https://www.journaldugeek.com/app/uploads/2025/03/terminator-II-jugement-dernier-1280x853.jpg"
     },
     {
-      "title": "Débit doublé pour 1 € de plus : cette offre fibre de SFR à 22,99 € sort du lot [Sponso]",
-      "link": "https://www.frandroid.com/telecom/forfait-internet/3039009_debit-double-pour-1-e-de-plus-cette-offre-fibre-de-sfr-a-2299-e-sort-du-lot",
-      "pubDate": "Wed, 25 Mar 2026 15:18:47 +0000",
-      "contentSnippet": "Sans engagement, cette offre RED box de SFR qui démarre à 22,99 € par mois permet de sélectionner soi-même le niveau de prestation pour coller au plus près à ses besoins et à son budget.",
-      "source": "Frandroid",
-      "sourceColor": "#00b9ff",
-      "image": "https://c0.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2026/03/sfr-red-box-fibre-1.jpg?resize=1200,675&key=a1d37e33&watermark"
+      "title": "GitHub transformé en usine à malwares pour piéger des développeurs et joueurs à grande échelle",
+      "link": "https://www.clubic.com/actualite-606124-github-transforme-en-usine-a-malwares-pour-pieger-des-developpeurs-et-joueurs-a-grande-echelle.html",
+      "pubDate": "Wed, 25 Mar 2026 15:17:00 GMT",
+      "contentSnippet": "Une vaste campagne de malwares, baptisée « TroyDen's Lure Factory », vient d'être mise au jour sur GitHub par Netskope Threat Labs. Elle diffuse des logiciels malveillants déguisés en outils légitimes sur la plateforme dédiée aux développeurs.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394733/raw"
     },
     {
       "title": "Google a peut-être réglé la crise de la mémoire vive (RAM) avec un algorithme",
@@ -480,6 +975,24 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/super-mario-galaxy-mcdonalds-1280x853.jpg"
     },
     {
+      "title": "Nouvelle alerte sur Chrome, Google corrige encore 8 failles à haut risque",
+      "link": "https://www.clubic.com/actualite-606115-nouvelle-alerte-sur-chrome-google-corrige-encore-8-failles-a-haut-risque.html",
+      "pubDate": "Wed, 25 Mar 2026 15:03:00 GMT",
+      "contentSnippet": "À peine quelques jours après une mise à jour de sécurité déjà bien chargée, Google récidive pour patcher huit nouvelles vulnérabilités dans Chrome. Toutes sont classées à haut risque, et plusieurs touchent des composants sensibles du navigateur.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394502/raw"
+    },
+    {
+      "title": "« Sans carte, sans smartphone » : les Français de CB testent le paiement par bague",
+      "link": "https://www.presse-citron.net/sans-carte-sans-smartphone-les-francais-de-cb-testent-le-paiement-par-bague/",
+      "pubDate": "Wed, 25 Mar 2026 15:01:49 +0000",
+      "contentSnippet": "En 2025, CB a testé une bague connectée de paiement auprès de volontaires, qui ont pu régler leurs achats en rapprochant cette bague du terminal, sans avoir à sortir un portefeuille ou un smartphone. Le test a permis de démontrer l’utilité de ce nouveau format.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Carte-bancaire-paiement-880x587.jpg"
+    },
+    {
       "title": "Mauvaise nouvelle pour les abonnés mobile sans engagement de Bouygues Telecom",
       "link": "https://www.numerama.com/tech/2217705-mauvaise-nouvelle-pour-les-abonnes-mobile-sans-engagement-de-bouygues-telecom.html",
       "pubDate": "Wed, 25 Mar 2026 15:00:52 +0000",
@@ -505,6 +1018,15 @@
       "source": "Journal du Geek",
       "sourceColor": "#ff6600",
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/Kestrel-siege-easyJet-1280x853.jpg"
+    },
+    {
+      "title": "Apple Watch : cette mise à jour discrète évite la panne d’iMessage et FaceTime en 2027",
+      "link": "https://www.clubic.com/actualite-606109-apple-watch-cette-mise-a-jour-discrete-evite-la-panne-d-imessage-et-facetime-en-2027.html",
+      "pubDate": "Wed, 25 Mar 2026 14:42:00 GMT",
+      "contentSnippet": "Apple déploie une mise à jour pour ses anciennes Apple Watch. Sans elle, certaines fonctions clés pourraient cesser de fonctionner d’ici 2027.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394481/raw"
     },
     {
       "title": "Peaky Blinders : le créateur explique la fin choquante de la série Netflix",
@@ -534,6 +1056,24 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/spider-man-record-1280x853.jpg"
     },
     {
+      "title": "OVH rach�te le concepteur de mod�les IA Dragon LLM",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-ovh-rachete-le-concepteur-de-modeles-ia-dragon-llm-99731.html",
+      "pubDate": "2026-03-25T14:29:04.000Z",
+      "contentSnippet": "L'hébergeur roubaisien étoffe son portefeuille sur l’IA en annonçant l’acquisition de Dragon LLM pour un montant (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Intel annonce une keynote pour le Computex 2026, avec Lip-Bu Tan au micro... mais pour nous dire quoi au juste ?",
+      "link": "https://www.clubic.com/actualite-606157-intel-annonce-une-keynote-pour-le-computex-2026-avec-lip-bu-tan-au-micro-mais-pour-nous-dire-quoi-au-juste.html",
+      "pubDate": "Wed, 25 Mar 2026 14:25:00 GMT",
+      "contentSnippet": "Intel a confirmé par la voie d'une publication sur X que Lip-Bu Tan, son dirigeant, donnera une keynote le 2 juin prochain dans le cadre de l'ouverture du Computex 2026. Une conférence dont on ignore le contenu exact, mais dont on pressent déjà les contours.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2295909/raw"
+    },
+    {
       "title": "Windows 11 aurait pu être un succès dès le début si Microsoft n’avait pas annulé ce projet",
       "link": "https://www.01net.com/actualites/windows-11-aurait-pu-etre-un-succes-des-le-debut-si-microsoft-navait-pas-annule-ce-projet.html",
       "pubDate": "Wed, 25 Mar 2026 14:20:00 +0000",
@@ -543,6 +1083,15 @@
       "image": "https://www.01net.com/app/uploads/2025/10/Windows-11_surface-1344x896.jpg"
     },
     {
+      "title": "Outlook classique a encore un problème avec Gmail, Microsoft déploie un correctif",
+      "link": "https://www.clubic.com/actualite-606088-outlook-classique-a-encore-un-probleme-avec-gmail-microsoft-deploie-un-correctif.html",
+      "pubDate": "Wed, 25 Mar 2026 14:19:00 GMT",
+      "contentSnippet": "Depuis fin février, certains comptes Gmail et Yahoo ont cessé de se synchroniser dans Outlook classique. Microsoft assure avoir corrigé le problème, mais le retour à la normale peut encore prendre un peu de temps selon les comptes concernés.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394442/raw"
+    },
+    {
       "title": "☕️ Étudiants : le Cnous victime d’un vol de données concernant 774 000 personnes",
       "link": "https://next.ink/brief_article/etudiants-le-cnous-victime-dun-vol-de-donnees-concernant-774-000-personnes/",
       "pubDate": "Wed, 25 Mar 2026 14:12:55 +0000",
@@ -550,6 +1099,15 @@
       "source": "Next Inpact",
       "sourceColor": "#00a550",
       "image": "https://i0.wp.com/next.ink/wp-content/uploads/2025/07/Cadenas-ouvert3-1024x496.webp?ssl=1"
+    },
+    {
+      "title": "Amazon s'offre une start-up qui développe des robots... à taille d'enfant",
+      "link": "https://www.clubic.com/actualite-606082-amazon-s-offre-une-start-up-qui-developpe-des-robots-a-taille-d-enfant.html",
+      "pubDate": "Wed, 25 Mar 2026 14:03:00 GMT",
+      "contentSnippet": "Le monde de la robotique attire de plus en plus les géants américains de la tech. Et le dernier en date semble être Amazon.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394424/raw"
     },
     {
       "title": "Notre preview de Pokémon Champions : le jeu qui va révolutionner toute la licence (et c’est gratuit)",
@@ -588,6 +1146,15 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/capture-decran-2026-03-25-a-120031.jpg?resize=1200,675&key=f22c01f7&watermark"
     },
     {
+      "title": "Instagram enterre Linktree et les \"lien en bio\" : les liens d'achats arrivent dans les Reels pour contrer TikTok Shop",
+      "link": "https://www.clubic.com/actualite-606073-instagram-enterre-linktree-et-les-lien-en-bio-les-liens-d-achats-arrivent-dans-les-reels-pour-contrer-tiktok-shop.html",
+      "pubDate": "Wed, 25 Mar 2026 13:42:00 GMT",
+      "contentSnippet": "Meta copie le modèle qui a fait le succès de TikTok Shop. Les créateurs deviennent des vendeurs, les Reels des catalogues. L'ère du commerce social intégré commence.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394415/raw"
+    },
+    {
       "title": "« Je ne sais plus quoi faire », les tireurs français désemparés face aux rumeurs de piratage du SIA",
       "link": "https://www.numerama.com/cyberguerre/2218049-je-ne-sais-plus-quoi-faire-les-tireurs-francais-desempares-face-aux-rumeurs-de-piratage-du-sia.html",
       "pubDate": "Wed, 25 Mar 2026 13:41:59 +0000",
@@ -624,6 +1191,33 @@
       "image": "https://www.01net.com/app/uploads/2026/03/smartphone-utilisateur-1344x896.jpg"
     },
     {
+      "title": "« Tout commence par un appel d’Enedis » : c’est quoi cette nouvelle arnaque qui fait un carnage ?",
+      "link": "https://www.presse-citron.net/tout-commence-par-un-appel-denedis-cest-quoi-cette-nouvelle-arnaque-qui-fait-un-carnage/",
+      "pubDate": "Wed, 25 Mar 2026 13:31:01 +0000",
+      "contentSnippet": "Une escroquerie qui se déploie en ce moment en France.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/02/20250227_114703-1-880x587.jpg"
+    },
+    {
+      "title": "\"Je parle avec mon esprit !\" : Neuralink transforme désormais les signaux neuronaux en mots",
+      "link": "https://www.clubic.com/actualite-606064-je-parle-avec-mon-esprit-neuralink-transforme-desormais-les-signaux-neuronaux-en-mots.html",
+      "pubDate": "Wed, 25 Mar 2026 13:22:00 GMT",
+      "contentSnippet": "Neuralink poursuit les expérimentations avec son implant cérébral. Et dans une rare mise à jour, l'entreprise d'Elon Musk étaye comment elle tente de rendre la voix à ceux qui l'ont perdue.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394394/raw"
+    },
+    {
+      "title": "« Difficile et douloureux » : Elon Musk avoue s’être planté sur cette technologie Tesla après 10 ans de promesses",
+      "link": "https://www.presse-citron.net/difficile-et-douloureux-elon-musk-avoue-setre-plante-sur-cette-technologie-tesla-apres-10-ans-de-promesses/",
+      "pubDate": "Wed, 25 Mar 2026 13:14:02 +0000",
+      "contentSnippet": "L’entrepreneur est revenu sur une vieille promesse.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/04/elon-musk-1-880x587.jpg"
+    },
+    {
       "title": "L’un des meilleurs TV OLED du moment perd plus de la moitié de son prix",
       "link": "https://www.numerama.com/tech/2217935-lun-des-meilleurs-tv-oled-du-moment-perd-plus-de-la-moitie-de-son-prix.html",
       "pubDate": "Wed, 25 Mar 2026 13:13:08 +0000",
@@ -631,6 +1225,33 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2025/09/lg-oled55c5.jpg?resize=1200,675&key=1fd7f186&watermark"
+    },
+    {
+      "title": "C’est voté : il faudra passer une visite médicale pour conserver son permis",
+      "link": "https://www.presse-citron.net/cest-vote-il-faudra-passer-une-visite-medicale-pour-conserver-son-permis/",
+      "pubDate": "Wed, 25 Mar 2026 13:10:17 +0000",
+      "contentSnippet": "Un formulaire d'auto-évaluation sera aussi possible.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2021/06/Permis-conduire-1024x681.jpg"
+    },
+    {
+      "title": "Nicolas M�chin nomm� DG de Hub One",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-nicolas-mechin-nomme-dg-de-hub-one-99733.html",
+      "pubDate": "2026-03-25T13:05:11.000Z",
+      "contentSnippet": "La direction générale de Hub One est de nouveau assurée en la personne de Nicolas Méchin. Il succède à Guillaume (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Ce Lyonnais a créé une alternative 100% européenne à WeTransfer avec un chiffrement de bout en bout",
+      "link": "https://www.clubic.com/actualite-606067-ce-lyonnais-a-cree-une-alternative-100-francaise-a-wetransfer-avec-un-chiffrement-de-bout-en-bout.html",
+      "pubDate": "Wed, 25 Mar 2026 13:05:00 GMT",
+      "contentSnippet": "La startup lyonnaise Retyc lance une plateforme de transfert et de stockage de fichiers chiffrés. Celle-ci a été pensée aussi bien pour les particuliers que pour les professionnels qui échangent des données sensibles au quotidien. Retyc est une plateforme non seulement souveraine mais également chiffrée de bout en bout.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394418/raw"
     },
     {
       "title": "En France, la contamination au cadmium atteint des niveaux records",
@@ -642,6 +1263,24 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/champ-traitement-1280x853.jpg"
     },
     {
+      "title": "Une compagnie aérienne lance des lits en classe Eco : le luxe à moindre prix",
+      "link": "https://www.presse-citron.net/compagnie-aerienne-lance-lits-classe-eco-luxe-moindre-prix/",
+      "pubDate": "Wed, 25 Mar 2026 13:00:25 +0000",
+      "contentSnippet": "Dormir allongé en avion sans payer le prix d'un billet en classe business, ce sera bientôt possible via la compagnie United Airlines. De quoi changer la donne sur les vols longs courriers ?",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/united-airlines-lits-880x587.jpg"
+    },
+    {
+      "title": "Réseaux sociaux interdits, couvre-feu, limite d'une heure : quand l'État britannique joue au parent numérique",
+      "link": "https://www.clubic.com/actualite-606049-reseaux-sociaux-interdits-couvre-feu-limite-d-une-heure-quand-l-etat-britannique-joue-au-parent-numerique.html",
+      "pubDate": "Wed, 25 Mar 2026 12:52:00 GMT",
+      "contentSnippet": "300 ados britanniques vont tester pendant six semaines ce que leurs parents n'arrivent plus à imposer. Un protocole rigoureux, mais une logique qui interroge.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394358/raw"
+    },
+    {
       "title": "Les personnages de The Witcher 4 et Cyberpunk 2 seront-ils générés par IA ?",
       "link": "https://www.journaldugeek.com/2026/03/25/les-personnages-de-the-witcher-4-and-cyberpunk-2-seront-ils-generes-par-ia/",
       "pubDate": "Wed, 25 Mar 2026 12:35:39 +0000",
@@ -651,6 +1290,33 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/cyberpunk-2077--1280x853.jpg"
     },
     {
+      "title": "iOS 27 : Apple changerait tout pour Siri avec une app dédiée, une nouvelle interface et un bouton dans les apps",
+      "link": "https://www.clubic.com/actualite-606055-ios-27-apple-changerait-tout-pour-siri-avec-une-app-dediee-une-nouvelle-interface-et-un-bouton-dans-les-apps.html",
+      "pubDate": "Wed, 25 Mar 2026 12:34:00 GMT",
+      "contentSnippet": "Apple préparerait une refonte majeure de Siri avec iOS 27. L’assistant vocal pourrait évoluer en véritable agent IA intégré à tout le système.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394391/raw"
+    },
+    {
+      "title": "Galaxy A37 et A57 : Samsung habille son milieu de gamme en premium, les prix suivent",
+      "link": "https://www.clubic.com/actualite-605599-les-samsung-galaxy-a37-et-a57-reprennent-le-design-des-s26-mais-la-facture-grimpe.html",
+      "pubDate": "Wed, 25 Mar 2026 12:28:00 GMT",
+      "contentSnippet": "La Famille Galaxy A représente l’entrée et le milieu de gamme de Samsung, soit l’écrasante majorité des ventes. Le constructeur profite de ce début de printemps pour annoncer les Galaxy A37 et A57, successeurs des A36 et A56.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394052/raw"
+    },
+    {
+      "title": "Un infostealer contourne le chiffrement ABE de Chrome",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-un-infostealer-contourne-le-chiffrement-abe-de-chrome-99732.html",
+      "pubDate": "2026-03-25T12:27:35.000Z",
+      "contentSnippet": "Vojtěch Krejsa, chercheur en menaces chez Gen a été le premier à tirer le signal d’alarme sur VoidStealer, un voleur de (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
       "title": "Bouygues Telecom prend une décision controversée au sujet des frais de résiliation",
       "link": "https://www.01net.com/actualites/bouygues-telecom-prend-decision-controversee-sujet-frais-resiliation.html",
       "pubDate": "Wed, 25 Mar 2026 12:24:20 +0000",
@@ -658,6 +1324,60 @@
       "source": "01net",
       "sourceColor": "#0033a0",
       "image": "https://www.01net.com/app/uploads/2025/09/bouygues-telecom-1344x896.jpg"
+    },
+    {
+      "title": "Une campagne de hameçonnage vide les réseaux d'entreprise en 25 secondes grâce à de faux CV",
+      "link": "https://www.clubic.com/actualite-606127-une-campagne-de-hameconnage-vide-les-reseaux-d-entreprise-en-25-secondes-grace-a-de-faux-cv.html",
+      "pubDate": "Wed, 25 Mar 2026 12:15:00 GMT",
+      "contentSnippet": "Une campagne de hameçonnage cible les entreprises francophones à l'aide de faux CV piégés. Des chercheurs ont découvert que l'opération aboutissait au vol d'identifiants et minage de cryptomonnaie, à l'insu des victimes.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394676/raw"
+    },
+    {
+      "title": "Ctrl + Maj + T : ce raccourci Windows dont vous ignoriez l’existence est vraiment indispensable",
+      "link": "https://www.presse-citron.net/ctrl-maj-t-ce-raccourci-windows-dont-vous-ignoriez-lexistence-est-vraiment-indispensable/",
+      "pubDate": "Wed, 25 Mar 2026 12:10:40 +0000",
+      "contentSnippet": "Il existe de très nombreux raccourcis clavier sur Windows. Mais s’il vous est déjà arrivé de fermer accidentellement un onglet important sur un navigateur, Ctrl + Maj + T devrait faire partie de ceux que vous connaissez par cœur.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/06/Windows-Microsoft-clavier-880x587.jpg"
+    },
+    {
+      "title": "Galaxy A37 et Galaxy A57 : prix, design, performances, tout savoir sur les nouveaux smartphones abordables de Samsung",
+      "link": "https://www.presse-citron.net/galaxy-a37-et-galaxy-a57-prix-design-performances-tout-savoir-sur-les-nouveaux-smartphones-abordables-de-samsung/",
+      "pubDate": "Wed, 25 Mar 2026 12:10:40 +0000",
+      "contentSnippet": "Samsung a présenté ses deux nouveaux smartphones de milieu de gamme : le Galaxy A37 et le Galaxy A57. Voici l’essentiel à savoir à leur sujet.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Galaxy-A-23-880x587.jpg"
+    },
+    {
+      "title": "J’ai pris en main les Galaxy A37 et A57 : le savoir-faire de Samsung à prix juste",
+      "link": "https://www.presse-citron.net/jai-pris-en-main-les-galaxy-a37-et-a57-le-savoir-faire-de-samsung-a-prix-juste/",
+      "pubDate": "Wed, 25 Mar 2026 12:05:08 +0000",
+      "contentSnippet": "Samsung vient d’annoncer les Galaxy A37 et A57. Des smartphones qui entendent proposer une expérience digne des hauts de gamme à un prix juste. Nous les avons pris en main, voici nos impressions.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Galaxy-A-1-880x606.jpg"
+    },
+    {
+      "title": "Galaxy A37 et A57 : voici les nouveaux smartphones abordables de Samsung",
+      "link": "https://www.presse-citron.net/galaxy-a37-et-a57-voici-les-nouveaux-smartphones-abordables-de-samsung/",
+      "pubDate": "Wed, 25 Mar 2026 12:01:25 +0000",
+      "contentSnippet": "Samsung officialise le Galaxy A37 et le Galaxy A57, ses nouveaux smartphones milieu de gamme. Sur ces appareils, le constructeur essaie de proposer un bon design et une fiche technique correcte, malgré le positionnement de ces appareils. Dépassé par Apple en 2025, Samsung pourrait s’appuyer, en partie, sur ses smartphones abordables, pour récupérer son trône, en 2026.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/Galaxy-A-12-880x587.jpg"
+    },
+    {
+      "title": "Samsung Galaxy S26 Ultra : la batterie serait plus simple à remplacer",
+      "link": "https://www.clubic.com/actualite-606079-samsung-galaxy-s26-ultra-la-batterie-serait-plus-simple-a-remplacer.html",
+      "pubDate": "Wed, 25 Mar 2026 12:01:00 GMT",
+      "contentSnippet": "Le dernier Galaxy S26 Ultra de Samsung récemment sorti est démonté par les spécialistes. Et si vous en possédez un, sachez que sa batterie ne devrait pas être un problème pour vous.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2364859/raw"
     },
     {
       "title": "Prise en main : pourquoi le Galaxy A57 explose l’A37 cette année ?",
@@ -687,6 +1407,15 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/Samsung-Galaxy-A-Series-Preview-01-1280x853.jpg"
     },
     {
+      "title": "Microsoft officialise enfin le retour de la fonction la plus regrettée de Windows 11",
+      "link": "https://www.clubic.com/actualite-606058-microsoft-officialise-enfin-le-retour-de-la-fonction-la-plus-regrettee-de-windows-11.html",
+      "pubDate": "Wed, 25 Mar 2026 11:42:00 GMT",
+      "contentSnippet": "Évoqué à l’état de rumeur en février, le retour de la barre des tâches repositionnable sur Windows 11 vient d’être officialisé par Microsoft. La fonction arrivera d’abord dans les builds Insider, avec un déploiement prévu plus largement dans le courant de l’année.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394379/raw"
+    },
+    {
       "title": "Comment activer le VPN gratuit dans Firefox",
       "link": "https://www.numerama.com/tech/2217999-comment-activer-le-vpn-gratuit-dans-firefox.html",
       "pubDate": "Wed, 25 Mar 2026 11:40:00 +0000",
@@ -714,6 +1443,24 @@
       "image": "https://www.01net.com/app/uploads/2026/03/entrepot-colis-1344x896.jpg"
     },
     {
+      "title": "Avec ce nouvel outil, Spotify muscle la protection des artistes contre l'IA",
+      "link": "https://www.clubic.com/actualite-606037-avec-ce-nouvel-outil-spotify-muscle-la-protection-des-artistes-contre-l-ia.html",
+      "pubDate": "Wed, 25 Mar 2026 11:26:00 GMT",
+      "contentSnippet": "Face à la prolifération des morceaux générés par l'IA, Spotify vient de lancer une nouvelle fonctionnalité qui donne aux artistes le contrôle sur les titres qui leur sont attribués.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2340778/raw"
+    },
+    {
+      "title": "Le Safari des m�tiers du num�rique de retour � Rennes",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-le-safari-des-metiers-du-numerique-de-retour-a-rennes-99730.html",
+      "pubDate": "2026-03-25T11:25:23.000Z",
+      "contentSnippet": "Créé en 2018 à Nantes, le Safari des métiers du numérique rassemble des professionnels du secteur pour promouvoir (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
       "title": "Revolut dépasse les 2 milliards d’euros de bénéfices en 2025, la néobanque change de dimension",
       "link": "https://www.journaldugeek.com/2026/03/25/revolut-depasse-les-2-milliards-deuros-de-benefices-en-2025-la-neobanque-change-de-dimension/",
       "pubDate": "Wed, 25 Mar 2026 11:16:46 +0000",
@@ -730,6 +1477,15 @@
       "source": "Next Inpact",
       "sourceColor": "#00a550",
       "image": "https://next.ink/wp-content/uploads/2026/03/Nividia.webp"
+    },
+    {
+      "title": "Colonisation de la Lune, vaisseau vers Mars... Retour sur les 4 annonces tonitruantes de la NASA",
+      "link": "https://www.clubic.com/actualite-606034-colonisation-de-la-lune-vaisseau-vers-mars-retour-sur-les-4-annonces-tonitruantes-de-la-nasa.html",
+      "pubDate": "Wed, 25 Mar 2026 11:12:00 GMT",
+      "contentSnippet": "Ce mardi 24 mars, la NASA a organisé un événement baptisé « Ignition », durant lequel elle a étayé ses plans pour la conquête spatiale dans les années à venir. Voici tout ce qu'il faut retenir.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394342/raw"
     },
     {
       "title": "Encore un studio PlayStation qui ferme",
@@ -759,6 +1515,69 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2023/04/201959jpg-r-1920-1080-f-jpg-q-x-xxyxx.jpg?resize=1200,675&key=401c2004&watermark"
     },
     {
+      "title": "On a testé les écouteurs Sony WF-1000XM6 pendant 2 semaines : les tueurs d’AirPods Pro 3 ?",
+      "link": "https://www.presse-citron.net/test-sony-wf-1000xm6-avis/",
+      "pubDate": "Wed, 25 Mar 2026 10:58:04 +0000",
+      "contentSnippet": "Sony vient de dévoiler les WF-1000XM6, la sixième génération de ses écouteurs true wireless haut de gamme. Avec un processeur trois fois plus rapide, huit microphones adaptatifs et un son co-développé avec des ingénieurs primés aux Grammy Awards, la marque japonaise envoie un message clair à Apple : la guerre du son premium est relancée.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/02/test-sony-wh-1000xm6-ergonomie-880x587.jpg"
+    },
+    {
+      "title": "OpenAI supprime Sora pour faire des économies et perd Disney : assistons-nous au début de l'éclatement de la bulle IA ?",
+      "link": "https://www.clubic.com/actualite-606031-openai-supprime-sora-pour-faire-des-economies-et-perd-disney-assistons-nous-au-debut-de-l-eclatement-de-la-bulle-ia.html",
+      "pubDate": "Wed, 25 Mar 2026 10:54:00 GMT",
+      "contentSnippet": "L'application qui devait créer le TikTok de l'IA est morte. Avec elle, un accord à 1 milliard avec Disney et l'illusion que tout produit IA trouvait son marché.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2305719/raw"
+    },
+    {
+      "title": "Avec Lakewatch, Databricks arrive sur le march� du SIEM",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-avec-lakewatch-databricks-arrive-sur-le-marche-du-siem-99728.html",
+      "pubDate": "2026-03-25T10:53:28.000Z",
+      "contentSnippet": "Dans un marché du SIEM occupé par des acteurs comme Splunk, Palo Alto Networks (qui a racheté Qradar d'IBM en 2024) ou Crowdstrike, (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Sennheiser est à vendre, et ça n'augure rien de bon",
+      "link": "https://www.clubic.com/actualite-606100-sennheiser-est-a-vendre-et-ca-n-augure-rien-de-bon.html",
+      "pubDate": "Wed, 25 Mar 2026 10:45:00 GMT",
+      "contentSnippet": "La branche grand-public de Sennheiser est abandonnée par son propriétaire suisse, Sonova, qui pour rappel, l’avait acheté en 2021. Ce dernier vient en effet d’annoncer sa mise en retrait du marché consumer pour se concentrer uniquement sur les aides auditives, sa spécialité.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2287803/raw"
+    },
+    {
+      "title": "Victoire pour Airbus : la Chine achète 100 avions européens et non américains",
+      "link": "https://www.presse-citron.net/victoire-pour-airbus-la-chine-achete-100-avions-europeens-et-non-americains/",
+      "pubDate": "Wed, 25 Mar 2026 10:41:03 +0000",
+      "contentSnippet": "Une excellente nouvelle pour l’avionneur européen basé à Blagnac, près de Toulouse.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/11/Airbus-A320-880x587.jpg"
+    },
+    {
+      "title": "Avec sa 1ere puce AGI, Arm cible les serveurs",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-avec-sa-1ere-puce-agi-arm-cible-les-serveurs-99729.html",
+      "pubDate": "2026-03-25T10:39:18.000Z",
+      "contentSnippet": "En février 2025, le Financial Times annonçait qu’Arm allait commercialiser ses propres puces et évoquait la date de l’été (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Embauche : l'IA devient un « avantage en nature » exigé par les candidats selon Microsoft",
+      "link": "https://www.clubic.com/actualite-606043-embauche-l-ia-devient-un-avantage-en-nature-exige-par-les-candidats-selon-microsoft.html",
+      "pubDate": "Wed, 25 Mar 2026 10:38:00 GMT",
+      "contentSnippet": "Un candidat Microsoft a conditionné sa venue à un budget IA quotidien pour toute son équipe. Le symptôme d'une mutation profonde du marché du travail tech.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394352/raw"
+    },
+    {
       "title": "Peut-on dépasser la vitesse autorisée pour doubler un autre véhicule ?",
       "link": "https://www.journaldugeek.com/2026/03/25/peut-on-depasser-la-vitesse-autorisee-pour-doubler-un-autre-vehicule/",
       "pubDate": "Wed, 25 Mar 2026 10:32:00 +0000",
@@ -768,6 +1587,15 @@
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/depassement-vitesse-autorisee-route-france-1280x853.jpeg"
     },
     {
+      "title": "Vos factures en chute libre : Jackery lance le SolarVault 3 Pro Max et c’est une pépite (-300€)",
+      "link": "https://www.presse-citron.net/vos-factures-en-chute-libre-jackery-lance-le-solarvault-3-pro-max-et-cest-une-pepite-300e/",
+      "pubDate": "Wed, 25 Mar 2026 10:30:19 +0000",
+      "contentSnippet": "Réduire ses dépenses d’électricité tout en adoptant une solution plus durable ? C’est possible avec Jackery et sa nouvelle gamme SolarVault 3.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/solarvault-3-pro-max-jackery-880x587.jpg"
+    },
+    {
       "title": "Le RPG spatial de Bethesda qui a fait les belles heures de la Xbox arrive sur PS5",
       "link": "https://www.numerama.com/pop-culture/2217859-le-rpg-spatial-de-bethesda-qui-a-fait-les-belles-heures-de-la-xbox-arrive-sur-ps5.html",
       "pubDate": "Wed, 25 Mar 2026 10:29:11 +0000",
@@ -775,6 +1603,15 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2023/07/starfield-jeu.jpg?resize=1200,675&key=d02763cf&watermark"
+    },
+    {
+      "title": "Microsoft et NVIDIA veulent construire les centrales nucléaires de demain avec une IA, et ça marche déjà",
+      "link": "https://www.clubic.com/actualite-606013-microsoft-et-nvidia-veulent-construire-les-centrales-nucleaires-de-demain-avec-une-ia-et-ca-marche-deja.html",
+      "pubDate": "Wed, 25 Mar 2026 10:22:00 GMT",
+      "contentSnippet": "Microsoft et NVIDIA s’associent pour appliquer l’IA à chaque étape de la construction de centrales nucléaires : conception, permis, chantier, exploitation. Une startup a déjà réduit sa charge administrative de 92 %, économisant 80 millions de dollars par an.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2277867/raw"
     },
     {
       "title": "Opera intègre Gemini et Google Trad dans sa barre d’outils",
@@ -840,6 +1677,15 @@
       "image": "https://www.journaldugeek.com/app/uploads/2025/09/nouveau-jeu-le-seigneur-des-anneaux-1280x853.jpg"
     },
     {
+      "title": "J’ai testé le Panasonic Z95B : et si c’était le dernier grand cru du fabricant japonais ?",
+      "link": "https://www.clubic.com/test-produit-600112-test-panasonic-z95b.html",
+      "pubDate": "Wed, 25 Mar 2026 10:01:00 GMT",
+      "contentSnippet": "Ces dernières semaines, j'ai eu l'occasion de passer du temps avec le Panasonic Z95B, le vaisseau amiral OLED d’une marque qui a bâti sa réputation sur une chose : respecter les films, pas les flatter. Dalle Tandem dernière génération, refroidissement maison, audio Technics, Fire TV… sur le papier, tout est là. Mais avec le virage stratégique que Panasonic amorce sur ses téléviseurs, le Z95B ressemble aussi à un modèle charnière : le dernier grand cru avant un changement d’époque ?",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2393671/raw"
+    },
+    {
       "title": "Adieu Lunar Gateway, dites bonjour à la base lunaire de la Nasa",
       "link": "https://www.numerama.com/sciences/2217861-adieu-lunar-gateway-dites-bonjour-a-la-base-lunaire-de-la-nasa.html",
       "pubDate": "Wed, 25 Mar 2026 09:58:40 +0000",
@@ -867,6 +1713,15 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/Bridgerton-saison-5-Francesca-1170x757-1.webp?resize=1200,675&key=d99baf19&watermark"
     },
     {
+      "title": "Android Auto inutilisable sur Pixel et S26 : le correctif enfin disponible en France",
+      "link": "https://www.clubic.com/actualite-606033-android-auto-inutilisable-sur-pixel-et-s26-le-correctif-enfin-disponible-en-france.html",
+      "pubDate": "Wed, 25 Mar 2026 09:46:00 GMT",
+      "contentSnippet": "Depuis plusieurs semaines, des milliers de conducteurs ne peuvent plus connecter leur téléphone en voiture. Google sort enfin de son silence.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2282223/raw"
+    },
+    {
       "title": "IPTV : la justice rend l’accès encore plus difficile en bloquant le contournement des VPN",
       "link": "https://www.journaldugeek.com/2026/03/25/iptv-la-justice-rend-lacces-encore-plus-difficile-en-bloquant-le-contournement-des-vpn/",
       "pubDate": "Wed, 25 Mar 2026 09:38:51 +0000",
@@ -885,6 +1740,15 @@
       "image": "https://i3.wp.com/next.ink/wp-content/uploads/2026/03/llm-dragon-1024x576.png?ssl=1"
     },
     {
+      "title": "« Un trésor caché de 344 milliards € sous Paris » : pourquoi la France refuse d’utiliser son or pour payer sa dette ?",
+      "link": "https://www.presse-citron.net/un-tresor-cache-de-344-milliards-e-sous-paris-pourquoi-la-france-refuse-dutiliser-son-or-pour-payer-sa-dette/",
+      "pubDate": "Wed, 25 Mar 2026 09:32:46 +0000",
+      "contentSnippet": "Il n’est pour l’heure pas question de revendre l’or géré par la Banque de France.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/02/Or-2-880x587.jpg"
+    },
+    {
       "title": "« Une mini-ville sur la Lune » à quoi pourrait ressembler la base lunaire de la NASA",
       "link": "https://www.journaldugeek.com/2026/03/25/mini-ville-lune-nasa-base/",
       "pubDate": "Wed, 25 Mar 2026 09:31:38 +0000",
@@ -892,6 +1756,15 @@
       "source": "Journal du Geek",
       "sourceColor": "#ff6600",
       "image": "https://www.journaldugeek.com/app/uploads/2026/03/nasa-lune-terre-espace-1280x853.jpg"
+    },
+    {
+      "title": "Une bague de paiement pour tous les Français ? Le groupement des cartes bancaires teste et approuve l'idée !",
+      "link": "https://www.clubic.com/actualite-606061-une-bague-de-paiement-pour-tous-les-francais-le-groupement-des-cartes-bancaires-teste-et-approuve-l-idee.html",
+      "pubDate": "Wed, 25 Mar 2026 09:29:00 GMT",
+      "contentSnippet": "CB, le Groupement des cartes bancaires, dévoile mercredi les résultats de son expérimentation autour d'une bague de paiement sans contact. Une première en France qui a largement séduit ses testeurs.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394409/raw"
     },
     {
       "title": "OpenAI abandonne la génération de vidéos (Sora) et perd son deal avec Disney : comment expliquer un tel échec ?",
@@ -930,6 +1803,15 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/balcony-solar-solution-fr.png?resize=1200,675&key=6a2037e7&watermark"
     },
     {
+      "title": "Cette puce IA d'Alibaba fait tourner DeepSeek V3, mais ses performances rivalisent avec un Apple M1… de 2020",
+      "link": "https://www.clubic.com/actualite-606040-ia-chinoise-alibaba-devoile-une-puce-serveur-qui-echappe-aux-sanctions-us.html",
+      "pubDate": "Wed, 25 Mar 2026 09:17:00 GMT",
+      "contentSnippet": "Alibaba dévoile le XuanTie C950, la puce RISC-V la plus puissante au monde. Gravée en 5 nm, elle exécute DeepSeek V3 nativement. Mais ses benchmarks racontent une tout autre histoire.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2394484/raw"
+    },
+    {
       "title": "Une baisse d’engagement sur Fortnite conduit Epic Games à licencier 1 000 personnes",
       "link": "https://www.numerama.com/pop-culture/2217681-une-baisse-dengagement-sur-fortnite-conduit-epic-games-a-licencier-1-000-personnes.html",
       "pubDate": "Wed, 25 Mar 2026 09:04:48 +0000",
@@ -939,31 +1821,49 @@
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/epic-games-fortnite.jpg?resize=1200,675&key=6c120059&watermark"
     },
     {
-      "title": "Le TikTok de l’IA est un fiasco : OpenAI ferme Sora et annule son partenariat avec Disney",
-      "link": "https://www.journaldugeek.com/2026/03/25/le-tiktok-de-lia-est-un-fiasco-openai-ferme-sora-et-annule-son-partenariat-avec-disney/",
-      "pubDate": "Wed, 25 Mar 2026 09:00:06 +0000",
-      "contentSnippet": "L'app vidéo la plus attendue de 2025 tire sa révérence, emportant dans sa chute un milliard de dollars de Disney et des ambitions sociales qui n'ont jamais vraiment décollé.",
-      "source": "Journal du Geek",
-      "sourceColor": "#ff6600",
-      "image": "https://www.journaldugeek.com/app/uploads/2026/03/mickey-bug-1280x853.jpg"
+      "title": "Safari 26.4 vient de déployer 44 nouveautés, et vous pourriez finalement lâcher Google Chrome",
+      "link": "https://www.clubic.com/actualite-606028-safari-26-4-vient-de-deployer-44-nouveautes-et-vous-pourriez-finalement-lacher-google-chrome.html",
+      "pubDate": "Wed, 25 Mar 2026 09:01:00 GMT",
+      "contentSnippet": "Safari 26.4 livre pas moins de 44 nouvelles fonctionnalités et 191 corrections de bugs. Apple en profite pour avancer sur la réécriture profonde de son moteur WebKit.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2250821/raw"
     },
     {
-      "title": "Ces deux constructeurs bien connus renoncent à leur politique initiale sur la voiture électrique (c’est un échec)",
-      "link": "https://www.journaldugeek.com/2026/03/25/ces-deux-constructeurs-bien-connus-renoncent-a-leur-politique-initiale-sur-la-voiture-electrique/",
-      "pubDate": "Wed, 25 Mar 2026 08:48:59 +0000",
-      "contentSnippet": "Deux marques de voitures prestigieuses renoncent à leur politique du tout électrique. Qu'est-ce que cela signifie pour les consommateurs ?",
-      "source": "Journal du Geek",
-      "sourceColor": "#ff6600",
-      "image": "https://www.journaldugeek.com/app/uploads/2026/03/bentley-electrique-1280x853.jpg"
+      "title": "Volkswagen fabricant de composants du Dôme de Fer israélien ? Le virage qu’on n’avait pas vu venir",
+      "link": "https://www.presse-citron.net/volkswagen-fabricant-composants-dome-fer-israelien-virage/",
+      "pubDate": "Wed, 25 Mar 2026 09:00:02 +0000",
+      "contentSnippet": "Volkswagen cherche désespérément un avenir pour son usine d'Osnabrück, et la piste qui se dessine est aussi inattendue que controversée.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2026/03/dome-fer-880x587.jpg"
     },
     {
-      "title": "La mise à jour de mars vient de casser Android Auto sur des millions de téléphones, et il n’y a pas encore de correctif",
-      "link": "https://www.journaldugeek.com/2026/03/25/la-mise-a-jour-de-mars-vient-de-casser-android-auto-sur-des-millions-de-telephones-et-il-ny-a-pas-encore-de-correctif/",
-      "pubDate": "Wed, 25 Mar 2026 08:41:30 +0000",
-      "contentSnippet": "Depuis la mise à jour Android du mois de mars, Android Auto est en panne sur les Pixel de Google et le Samsung Galaxy S26. Déconnexions en boucle, filaire inutilisable, Google n'a pas encore communiqué de correctif !",
-      "source": "Journal du Geek",
-      "sourceColor": "#ff6600",
-      "image": "https://www.journaldugeek.com/app/uploads/2025/10/Android-Auto-1280x853.jpg"
+      "title": "OpenAI abandonne Sora : que prépare vraiment l’entreprise pour la vidéo générative ?",
+      "link": "https://www.presse-citron.net/openai-abandonne-sora-prepare-lentreprise-video-generative/",
+      "pubDate": "Wed, 25 Mar 2026 08:54:00 +0000",
+      "contentSnippet": "En un peu plus d'un an d'existence, Sora aura coûté une fortune à OpenAI, mais lui aura rapporté des miettes. L'entreprise a donc décidé de tourner la page : l'application de génération de vidéos disparaît.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/10/Sora-2-880x569.jpg"
+    },
+    {
+      "title": "CarPlay évolue avec iOS 26.4 et prépare une mise à jour plus importante",
+      "link": "https://www.clubic.com/actualite-606025-carplay-evolue-avec-ios-26-4-et-prepare-une-mise-a-jour-plus-importante.html",
+      "pubDate": "Wed, 25 Mar 2026 08:43:00 GMT",
+      "contentSnippet": "Deux nouvelles fonctions débarquent dès aujourd'hui sur l'interface automobile d'Apple. Mais c'est une troisième fonctionnalité, promise depuis plusieurs mois, qui retient toute l'attention des utilisateurs d'iPhone.",
+      "source": "Clubic",
+      "sourceColor": "#ff4500",
+      "image": "https://pic.clubic.com/v1/images/2267495/raw"
+    },
+    {
+      "title": "Carburant à 3,47 € le litre : le cauchemar devient réalité dans ce pays aux 7 millions d’habitants",
+      "link": "https://www.presse-citron.net/carburant-a-347-e-le-litre-le-cauchemar-devient-realite-dans-ce-pays-aux-7-millions-dhabitants/",
+      "pubDate": "Wed, 25 Mar 2026 08:41:41 +0000",
+      "contentSnippet": "Cette explosion des prix du carburant menace le pouvoir d’achat des automobilistes.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2024/08/essence-voiture-consommation-880x587.jpg"
     },
     {
       "title": "Un nouveau film Le Seigneur des anneaux est annoncé et on sait déjà de quoi il parlera",
@@ -1065,6 +1965,15 @@
       "image": "https://siecledigital.fr/wp-content/uploads/2026/03/anthropic-600x350.jpg"
     },
     {
+      "title": "Le Commissariat au num�rique de D�fense recrute des profils IT � l'Efrei",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-le-commissariat-au-numerique-de-defense-recrute-des-profils-it-a-l-efrei-99722.html",
+      "pubDate": "2026-03-25T08:04:03.000Z",
+      "contentSnippet": "Epauler le ministère des Armées dans sa recherche de profils IT. C’est l’un des objectifs d’un partenariat passé (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
       "title": "OpenAI abandonne Sora et les vidéos générées par IA, l’accord avec Disney vole en éclats",
       "link": "https://next.ink/230579/openai-abandonne-sora-et-les-videos-generees-par-ia-laccord-avec-disney-vole-en-eclats/",
       "pubDate": "Wed, 25 Mar 2026 08:04:03 +0000",
@@ -1101,6 +2010,33 @@
       "image": "https://www.01net.com/app/uploads/2025/10/sora-openai-1-1344x896.jpg"
     },
     {
+      "title": "Devolo comble les angles morts du WiFi",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-devolo-comble-les-angles-morts-du-wifi-99723.html",
+      "pubDate": "2026-03-25T08:00:03.000Z",
+      "contentSnippet": "Le fournisseur allemand Devolo dévoile son système Wifi 7 mesh (référence BE6500) pouvant également être utilisé (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "L'Office europ�en des brevets passe � la GenAI",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-l-office-europeen-des-brevets-passe-a-la-genai-99719.html",
+      "pubDate": "2026-03-25T07:59:23.000Z",
+      "contentSnippet": "Utiliser l'IA générative pour accélérer le traitement des demandes de brevets, notamment la reconnaissance des données (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
+      "title": "Cr�dit Agricole GPI nomme Caroline Comet-Fraigneau DG d�l�gu�e",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-credit-agricole-gpi-nomme-caroline-comet-fraigneau-dg-deleguee-99720.html",
+      "pubDate": "2026-03-25T07:58:20.000Z",
+      "contentSnippet": "Ancienne d'Orange Business Services et d'OVHcloud, Caroline Comet-Fraigneau devient directrice générale déléguée de (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
       "title": "Votre voiture mise à jour comme votre smartphone : la promesse du nouvel Android Automotive",
       "link": "https://www.01net.com/actualites/votre-voiture-mise-a-jour-comme-smartphone-promesse-nouvel-android-automotive.html",
       "pubDate": "Wed, 25 Mar 2026 07:57:17 +0000",
@@ -1110,6 +2046,15 @@
       "image": "https://www.01net.com/app/uploads/2022/06/49-android-automotive-1-renault-750x410-1.jpg"
     },
     {
+      "title": "Les RSSI face au d�fi de l'observabilit� des agents IA",
+      "link": "https://www.lemondeinformatique.fr/actualites/lire-les-rssi-face-au-defi-de-l-observabilite-des-agents-ia-99721.html",
+      "pubDate": "2026-03-25T07:57:01.000Z",
+      "contentSnippet": "Des agents IA opèrent déjà au sein des systèmes d'entreprise, effectuant discrètement certaines tâches autrefois (...)",
+      "source": "Le Monde Informatique",
+      "sourceColor": "#0055a4",
+      "image": null
+    },
+    {
       "title": "Cinq jours pour infiltrer, trois heures pour tout voler : comment des hackers ont piégé des millions de développeurs IA",
       "link": "https://www.numerama.com/cyberguerre/2217675-cinq-jours-pour-infiltrer-trois-heures-pour-tout-voler-comment-des-hackers-ont-piege-des-millions-de-developpeurs-ia.html",
       "pubDate": "Wed, 25 Mar 2026 07:55:18 +0000",
@@ -1117,6 +2062,15 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/hack-litellm.jpg?resize=1200,675&key=0bba4a87&watermark"
+    },
+    {
+      "title": "Xiaomi dévoile ses résultats financiers, la marque a eu raison de miser sur les véhicules électriques",
+      "link": "https://www.presse-citron.net/xiaomi-devoile-ses-resultats-financiers-la-marque-a-eu-raison-de-miser-sur-les-vehicules-electriques/",
+      "pubDate": "Wed, 25 Mar 2026 07:38:06 +0000",
+      "contentSnippet": "Xiaomi a annoncé ses résultats financiers pour l’année 2025 et ils sont excellents. Ils montrent que la marque chinoise a eu raison de miser sur les véhicules électriques en plus des smartphones et de l’IoT.",
+      "source": "Presse-Citron",
+      "sourceColor": "#f7c948",
+      "image": "https://www.presse-citron.net/app/uploads/2025/05/Xiaomi-Chine-880x587.jpg"
     },
     {
       "title": "☕️ Epic licencie plus de 1 000 personnes, met en cause le recul de Fortnite, pas l’IA",
@@ -1137,24 +2091,6 @@
       "image": "https://www.01net.com/app/uploads/2025/11/siri-icone-logo-1344x896.jpg"
     },
     {
-      "title": "Spotify lance SongDNA, son « making of » de la musique que vous écoutez",
-      "link": "https://www.01net.com/actualites/spotify-lance-songdna-son-making-of-de-la-musique-que-vous-ecoutez.html",
-      "pubDate": "Wed, 25 Mar 2026 07:29:18 +0000",
-      "contentSnippet": "Spotify veut vous faire voir les titres que vous écoutez sous un angle nouveau. Avec sa nouvelle fonction SongDNA, la plate-forme veut dévoiler les coulisses du processus de création musical qui se cache derrière vos morceaux favoris.",
-      "source": "01net",
-      "sourceColor": "#0033a0",
-      "image": "https://www.01net.com/app/uploads/2025/11/logo-spotify-01net-1344x896.jpg"
-    },
-    {
-      "title": "01net morning : les Français se ruent sur les voitures électriques d’occasion, cyberattaque contre le Crous, Citroën casse le prix de la C3 électrique",
-      "link": "https://www.01net.com/actualites/01net-morning-les-francais-se-ruent-sur-les-voitures-electriques-doccasion-cyberattaque-contre-le-crous-citroen-casse-le-prix-de-la-c3-electrique.html",
-      "pubDate": "Wed, 25 Mar 2026 06:29:28 +0000",
-      "contentSnippet": "Bonjour à tous, voici la matinale de 01net ! Qu’avez-vous manqué hier ? Retrouvez toute l’actu à connaitre pour démarrer la journée du bon pied !",
-      "source": "01net",
-      "sourceColor": "#0033a0",
-      "image": "https://www.01net.com/app/uploads/2026/03/01net-Morning-17-1344x896.jpg"
-    },
-    {
       "title": "On a vu toute la saison 2 de Daredevil Born Again en avant-première : notre avis sans spoiler",
       "link": "https://www.numerama.com/pop-culture/2217017-on-a-vu-toute-la-saison-2-de-daredevil-born-again-en-avant-premiere-notre-avis-sans-spoiler.html",
       "pubDate": "Wed, 25 Mar 2026 01:00:00 +0000",
@@ -1171,15 +2107,6 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2021/04/nucleaire-fusee.jpg?resize=1200,675&key=65c68738&watermark"
-    },
-    {
-      "title": "Cyberattaque contre le Crous : les données de 774 000 étudiants ont été siphonnées",
-      "link": "https://www.01net.com/actualites/cyberattaque-contre-le-crous-les-donnees-de-774-000-etudiants-ont-ete-siphonnees.html",
-      "pubDate": "Tue, 24 Mar 2026 18:20:21 +0000",
-      "contentSnippet": "Les données de 774 000 étudiants et ex-étudiants ont été siphonnées par des cybercriminels. Le Cnous révèle qu'une cyberattaque s'est soldée par le vol des informations détenues par les services sociaux des Crous.",
-      "source": "01net",
-      "sourceColor": "#0033a0",
-      "image": "https://www.01net.com/app/uploads/2025/06/fuite-donnees-france-1344x896.jpg"
     },
     {
       "title": "iOS 26.4 est disponible : quelles sont les nouveautés de la mise à jour sur iPhone ?",
@@ -1216,15 +2143,6 @@
       "source": "Numerama",
       "sourceColor": "#e5127d",
       "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/lego-le-petit-bouquet-ensoleille-fleurs.jpg?resize=1200,675&key=5d880caf&watermark"
-    },
-    {
-      "title": "For All Mankind : une saison 6 et une mauvaise nouvelle",
-      "link": "https://www.numerama.com/pop-culture/2217397-for-all-mankind-une-saison-6-et-une-mauvaise-nouvelle.html",
-      "pubDate": "Tue, 24 Mar 2026 16:47:25 +0000",
-      "contentSnippet": "Alors que les fans du monde entier comptent les jours avant le lancement de la saison 5 de For All Mankind, l'avenir de l'épopée spatiale d'Apple TV vient de prendre un tournant décisif. Entre nouveaux visages au casting et expansion de l'univers, la série phare de Ronald D. Moore s'apprête à vivre ses heures les plus intenses.",
-      "source": "Numerama",
-      "sourceColor": "#e5127d",
-      "image": "https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2026/03/capture-decran-2026-03-24-a-171105.jpg?resize=1200,675&key=ea6f0e58&watermark"
     },
     {
       "title": "Palantir s’étend encore au Pentagone et dans le système britannique",
@@ -1648,24 +2566,6 @@
       "source": "Next Inpact",
       "sourceColor": "#00a550",
       "image": "https://next.ink/wp-content/uploads/2026/03/Nextquick_moe.webp"
-    },
-    {
-      "title": "☕️ Amazon s’offre la startup suisse Rivr et ses robots livreurs des 100 derniers mètres",
-      "link": "https://next.ink/brief_article/amazon-soffre-la-startup-suisse-rivr-et-ses-robots-livreurs-des-100-derniers-metres/",
-      "pubDate": "Fri, 20 Mar 2026 09:05:42 +0000",
-      "contentSnippet": "Basée à Zurich, la startup suisse Rivr a rejoint les rangs du leader mondial du e-commerce, Amazon. Son CEO, Marko Bjelonic, a partagé la nouvelle jeudi 19 mars sur LinkedIn : « Je suis ravi de vous annoncer que Rivr fait désormais partie d’Amazon, marquant ainsi le début d’une nouvelle ère passionnante pour notre équipe. Cette […]",
-      "source": "Next Inpact",
-      "sourceColor": "#00a550",
-      "image": "https://i0.wp.com/next.ink/wp-content/uploads/2026/03/rivr-1024x768.jpg?ssl=1"
-    },
-    {
-      "title": "Des banques lancent b.connect : sous le capot du bouton de connexion souverain… ou pas",
-      "link": "https://next.ink/229709/les-banques-lancent-b-connect-sous-le-capot-du-bouton-de-connexion-souverain-ou-pas/",
-      "pubDate": "Fri, 20 Mar 2026 08:31:00 +0000",
-      "contentSnippet": "b.connect est un système de connexion sans mot de passe, créé par des banques françaises. Gratuit pour les utilisateurs, mais payant pour les enseignes. b.connect met en avant la « souveraineté numérique » et l’« indépendance technologique »… tout en étant chez Google. Quoi qu’il en soit, nous avons pris en main le bouton, examiné […]",
-      "source": "Next Inpact",
-      "sourceColor": "#00a550",
-      "image": "https://next.ink/wp-content/uploads/2026/03/image-158.png"
     }
   ]
 }
