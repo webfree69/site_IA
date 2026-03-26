@@ -3,10 +3,18 @@ const fs = require('fs');
 const path = require('path');
 
 const parser = new Parser({
-  timeout: 10000,
+  timeout: 5000,
   headers: {
-    'User-Agent': 'Mozilla/5.0 (compatible; NewsBot/1.0)',
-    'Accept': 'application/rss+xml, application/xml, text/xml'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/rss+xml, application/xml, text/xml, */*',
+    'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Cache-Control': 'no-cache'
+  },
+  maxRedirects: 3,
+  customFields: {
+    item: ['media:content', 'media:thumbnail', 'content:encoded', 'content:encodedSnippet']
   }
 });
 
@@ -67,9 +75,14 @@ const MAX_ARTICLES_PER_SOURCE = 50;
 const FEED_PATH = path.join(__dirname, 'feed.json');
 
 async function fetchFeed(feedConfig) {
+  const timeoutPromise = new Promise((_, reject) => {
+    setTimeout(() => reject(new Error('Timeout après 6 secondes')), 6000);
+  });
+
   try {
     console.log(`⏳ Fetching: ${feedConfig.name}...`);
-    const feed = await parser.parseURL(feedConfig.url);
+    const feedPromise = parser.parseURL(feedConfig.url);
+    const feed = await Promise.race([feedPromise, timeoutPromise]);
     const articles = (feed.items || []).slice(0, MAX_ARTICLES_PER_SOURCE).map(item => ({
       title: item.title || 'Sans titre',
       link: item.link || '',
